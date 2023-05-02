@@ -1,0 +1,46 @@
+body{
+    background-color: lightgray;
+}
+.container{
+    height: 4400px;
+}
+.container-right{
+    background-color: rgb(226, 220, 220);
+    position: absolute;
+    height: auto;
+    left: 48px;
+    right: 48px;
+    top: 52px;
+    border-radius: 50px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+#shop-name{
+    font-size: larger;
+    font-weight: bold;
+}
+#special-word{
+    font-weight: bold; 
+    font-size: 22px;
+    margin-bottom: -10px;
+}
+.container h1{
+    margin-left: 20px;
+    font-style: italic;
+    text-align: center;
+
+    background: -webkit-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.container hr{
+    line-height: 20px;
+}
+.container p{
+    margin-left: 20px;
+    padding-right: 20px;
+    font-size: larger;
+    text-align: justify;
+}
+.container ul , ol{
+    margin-left: 50px;
+}

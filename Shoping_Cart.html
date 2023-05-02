@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoping Cart</title>
+
+    <link rel="stylesheet" href="Shoping_Cart_Style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <button onclick="window.location.href = 'After_login.html';" type="button">
+                <h1 class="title">
+                    <img src="image\Logo.jpg" height="150px">
+                </h1>
+            </button>
+                
+            <u1 class="menu">
+                <button onclick="window.location.href = 'After_login.html';" type="button">
+                    <li><a>HOME</a></li>
+                </button>
+
+                <button onclick="window.location.href = 'Contact.html';" type="button">
+                    <li><a>CONTACTS</a></li>
+                </button>
+
+                <button onclick="window.location.href = 'About.html';" type="button">
+                    <li><a>ABOUTS</a></li>
+                </button>
+
+                <button onclick="window.location.href = 'Shoping_Cart.html';" type="button" title="Shopping Cart">
+                    <i class="fa fa-shopping-cart" style="font-size: 30px ; color: red"></i>
+                </button>
+            </u1>
+        </div>
+    </div>
+    
+    <div class="Cart-Container">   
+        <div class="headd">
+            <h3 class="top-left"><a href="Shoping_Cart.html">Shopping Cart</a></h3>
+            <h5 class="top-right"><a href="Shoping_Cart.html">Remove all</a></h5>
+        </div>
+        
+        <div class="Cart-Items">
+
+            <label class="mark-container">
+                <input type="checkbox" name="radio" checked>
+                <span class="checkmark"></span>
+            </label>
+
+            <div class="image-box">
+                <img src="image\gs5.jpg"
+                height="250px">
+            </div>
+
+            <div class="about">
+                <h1>Bubble Sleeve High Waist With Thin Pants</h1>
+                <select>
+                    <option>XS</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                </select>
+                <h2>RM 47.99</h2>
+            </div>
+
+            <div class="button-container">
+                <button id="subtract-btn">-</button>
+                <span id="input">0</span>
+                <button id="add-btn">+</button>
+            </div>
+
+        </div>
+
+        <footer>
+            <hr>
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>&nbsp; :</td>
+                    <td>RM 47.99</td>
+                </tr>
+                <tr>
+                    <td>Shipping Fee</td>
+                    <td>&nbsp; : &nbsp;</td>
+                    <td>RM 4.90</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>&nbsp; : &nbsp;</td>
+                    <td>RM 52.89</td>
+                </tr>
+            </table>
+
+            <button onclick="window.location.href = 'Payment.html'" type="button">
+                Payment
+            </button>
+            
+        </footer>
+
+        <!--    J.S Function     -->
+        <script src="Shoping_Cart_Fx.js"></script>
+</body>
+</html>

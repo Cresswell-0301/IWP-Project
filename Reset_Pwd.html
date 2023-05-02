@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password</title>
+
+    <link rel="stylesheet" href="Login & SignUp_Style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left"></div>
+
+        <div class="right">
+
+            <div class="switch-container">
+
+                <!--    Auto Default Open   -->
+                <a onclick="openForm(event, 'Forgotpwd')" id="defaultOpen"></a>
+
+                <!--    Verify Email    -->
+                <div id="Forgotpwd"  class="switchcontent">
+                    <h1 class="title">Forgot Password</h1>
+                    <form method='POST' name='femails'>
+                        <div class="field-wrap">
+                            <input name="femail" type="email" id="FEmail" required/>
+                            <label for="FEmail">Email Address</label>
+                        </div>
+                        <button type="submit" class="actionbtn">Verify</button>
+                    </form>
+                </div>
+
+                <!--    Reset Password  -->
+                <div id="reset-pwd" class="switchcontent">
+                    <h1 class="title">Reset Password</h1>
+                    <form method='POST' name='fpwdds'>
+                        <div class="field-wrap">
+                            <input name="fpassword" type="password" id="fPassword" required/>
+                            <label for="fPassword">New Password</label>
+                        </div>
+
+                        <div class="field-wrap">
+                            <input name="rfpassword" type="password" id="rfPassword" required/>
+                            <label for="rfPassword">Re-Confirm Password</label>
+                        </div>
+
+                        <button type="submit" class="actionbtn">Reset</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="Reset_Fx.js"></script>
+
+</body>
+</html>

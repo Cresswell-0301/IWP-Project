@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Sign-Up </title>
+
+    <link rel="stylesheet" href="Login & SignUp_Style.css">
+</head>
+<body>
+    
+    <div class="container">
+        
+        <div class="left"></div>
+
+        <div class="right">
+
+            <div class="switch-container">
+
+                <!-- sign up form start -->
+                <div id="SignUp" class="switchcontent">
+                    <h1 class="title">Sign Up for Free</h1>
+                    <form method='POST' name='SignUp'>
+                        <div class="field-wrap">
+                            <input name="Full name" type="text" id="name" required/>
+                            <label for="name">Full Name</label>
+                        </div>
+                        <div class="field-wrap">
+                            <input name="email" type="email" id="email" required/>
+                            <label for="email">Email Address</label>
+                        </div>
+                        <div class="field-wrap">
+                            <input name="password" type="password" id="password" required/>
+                            <label for="password">Set Password</label>
+                        </div>
+
+                        <div class="check">
+                            <input type="checkbox" required><span>I agree to the <a href="Term&Condition.html">Terms & Conditions</a></span>
+                        </div>
+                        
+                        <button type="submit" class="actionbtn">Get Started</button>
+                    </form>
+
+                    <p class="forgot">
+                        Have an account ? &nbsp; |&nbsp; 
+                        <a onclick="openForm(event, 'LogIn')" id="defaultOpen">Log In</a>
+                    </p>
+                </div>
+                <!-- sign up form end -->
+
+                <!-- login form start -->
+                <div id="LogIn" class="switchcontent">
+                    <h1 class="title">Welcome Back!</h1>
+                    <form method='POST' name='login'>
+                        <div class="field-wrap">
+                            <input name="lemail" type="email" id="signInEmail" required/>
+                            <label for="signInEmail">Email Address</label>
+                        </div>
+                        <div class="field-wrap">
+                            <input name="lpassword" type="password" id="signInPswd" required/>
+                            <label for="signInPswd">Password</label>
+                        </div>
+                        <button type="submit" class="actionbtn">Log In</button>
+                    </form>
+
+                    <p class="forgot">
+                        Don't have an account ? &nbsp; |&nbsp;
+
+                        <a onclick="openForm(event, 'SignUp')"> Sign Up</a>
+                        <a href="Reset_Pwd.html" style="margin-left: 102px;">Forgot Password ?</a>
+                    </p>
+                </div>
+                <!-- login form end -->
+
+            </div>
+        </div>
+    </div>
+    <script src="Login & SignUp_Fx.js"></script>
+</body>
+</html>

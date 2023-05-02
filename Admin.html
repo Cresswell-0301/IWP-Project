@@ -1,0 +1,4441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Admin_Style.css">
+</head>
+<body>
+    <div class="container">
+
+        <!--    Start Left Bar    -->
+        <div class="left-bar">
+
+            <div class="left-logo">
+                <img src="image/Logo.jpg" alt="">
+            </div>
+
+            <div class="selection">
+                <p><img src="image/Admin_Photo.jpg" width="40px" height="35px"/></p>
+
+                <p>Admin</p>
+            </div>
+
+            <div class="selection-1">
+                <button onclick="openForm(event,'dashboard')" id="defaultOpen">
+                    <h3><i class='bx bx-home'></i><br>Main</h3>
+                </button>
+            </div>
+
+            <div class="selection-2">
+                <button onclick="openForm(event,'manage-staff')">
+                    <h3><i class='bx bx-user-circle'></i>Our&nbsp;Staff</h3>
+                </button>
+            </div>
+
+            <div class="selection-3">
+                <button onclick="openForm(event,'add-user')">
+                    <h3><img src="image/add_staff_icon.jpg">Add&nbsp;Staff</h3>
+                </button>
+            </div>
+
+            <div class="selection-4">
+                <button onclick="openForm(event,'view-item-page-1') , topFunction()">
+                    <h3><img src="image/view_cart_icon.jpg">View&nbsp;Items</h3>
+                </button>
+            </div>
+
+            <div class="selection-5">
+                <button onclick="openForm(event,'#')">
+                    <h3><img src="#">#</h3>
+                </button>
+            </div>
+
+            <div class="selection-6">
+                <button onclick="window.location.href = 'Login & SignUp.html'">
+                    <h3><i class='bx bx-log-out bx-flip-horizontal'></i><br>Log Out</h3>
+                </button>
+            </div>
+        </div>
+        <!--    End Left Bar    -->
+
+
+        <!--    Start Main Page -->
+        <div id="dashboard" class="contain">
+            
+            <div class="main-content">
+                <div class="row">
+
+                    <div class="col-3 col-md-6 col-sm-12">
+                        <div class="box box-hover">
+                            <div class="counter">
+                                <div class="counter-title">
+                                    total order
+                                </div>
+                                <div class="counter-info">
+                                    <div class="counter-count">
+                                        11037
+                                    </div>
+                                    <i class='bx bx-shopping-bag'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 col-md-6 col-sm-12">
+                        <div class="box box-hover">
+                            <div class="counter">
+                                <div class="counter-title">
+                                    total profit
+                                </div>
+                                <div class="counter-info">
+                                    <div class="counter-count">
+                                        RM 20,057
+                                    </div>
+                                    <i class='bx bx-line-chart'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 col-md-6 col-sm-12">
+                        <div class="box box-hover">
+                            <div class="counter">
+                                <div class="counter-title">
+                                    daily visitors
+                                </div>
+                                <div class="counter-info">
+                                    <div class="counter-count">
+                                        520
+                                    </div>
+                                    <i class='bx bx-user'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-3 col-md-6 col-sm-12">
+                        <div class="box f-height">
+                            <div class="box-header">
+                                top product
+                            </div>
+                            <div class="box-body">
+                                <ul class="product-list">
+                                    <li class="product-list-item">
+                                        <div class="item-info">
+                                            <img src="image/gs3.jpg" alt="product image">
+                                            <div class="item-name">
+                                                <div class="product-name">Back Tie Bow Cropped Belly Button Shirt</div>
+                                                <div class="text-second">Girl Shirts</div>
+                                            </div>
+                                        </div>
+                                        <div class="item-sale-info">
+                                            <div class="text-second">Sales</div>
+                                            <div class="product-sales">RM 5,930</div>
+                                        </div>
+                                    </li>
+                                    <hr>
+                                    <li class="product-list-item">
+                                        <div class="item-info">
+                                            <img src="image/bs11.jpg" alt="product image">
+                                            <div class="item-name">
+                                                <div class="product-name">NIKE Summer Oversize Cotton T-shirt</div>
+                                                <div class="text-second">Boy Shirts</div>
+                                            </div>
+                                        </div>
+                                        <div class="item-sale-info">
+                                            <div class="text-second">Sales</div>
+                                            <div class="product-sales">RM 4,580</div>
+                                        </div>
+                                    </li>
+                                    <hr>
+                                    <li class="product-list-item">
+                                        <div class="item-info">
+                                            <img src="image/gs8.jpg" alt="product image">
+                                            <div class="item-name">
+                                                <div class="product-name">Collar Split Slim Trim Irregular Dress</div>
+                                                <div class="text-second">Girl Dress</div>
+                                            </div>
+                                        </div>
+                                        <div class="item-sale-info">
+                                            <div class="text-second">Sales</div>
+                                            <div class="product-sales">RM 4,373</div>
+                                        </div>
+                                    </li>
+                                    <hr>
+                                    <li class="product-list-item">
+                                        <div class="item-info">
+                                            <img src="image/bp8.jpg" alt="product image">
+                                            <div class="item-name">
+                                                <div class="product-name">NIKE Long Sports Pants</div>
+                                                <div class="text-second">Boy Pants</div>
+                                            </div>
+                                        </div>
+                                        <div class="item-sale-info">
+                                            <div class="text-second">Sales</div>
+                                            <div class="product-sales">RM 4,019</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- CATEGORY CHART -->
+                    <div class="col-4 col-md-6 col-sm-12">
+                        
+                        <div class="box f-height">
+                            <div class="box-body">
+                                <div id="category-chart"></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- END CATEGORY CHART -->
+
+                    <!-- ORDERS TABLE -->
+                    <div class="col-12">
+                        <div class="box">
+                            <div class="box-header">
+                                Recent orders
+                            </div>
+                            <div class="box-body overflow-scroll">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Customer</th>
+                                            <th>Date</th>
+                                            <th>Order status</th>
+                                            <th>Payment status</th>
+                                            <th>Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>#2345</td>
+                                            <td>
+                                                <div class="order-owner">
+                                                    <img src="image/payment_1.jpg" alt="user image">
+                                                    <span>tuat tran anh</span>
+                                                </div>
+                                            </td>
+                                            <td>2023-03-11</td>
+                                            <td>
+                                                <span class="order-status order-shipped">
+                                                    Shipped
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="payment-status payment-paid">
+                                                    <div class="dot"></div>
+                                                    <span>Paid</span>
+                                                </div>
+                                            </td>
+                                            <td>RM 123.45</td>
+                                        </tr>
+                                        <tr>
+                                            <td>#2346</td>
+                                            <td>
+                                                <div class="order-owner">
+                                                    <img src="image/payment_2.jpg" alt="user image">
+                                                    <span>John doe</span>
+                                                </div>
+                                            </td>
+                                            <td>2023-03-14</td>
+                                            <td>
+                                                <span class="order-status order-shipped">
+                                                    Shipped
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="payment-status payment-paid">
+                                                    <div class="dot"></div>
+                                                    <span>Paid</span>
+                                                </div>
+                                            </td>
+                                            <td>RM 123.45</td>
+                                        </tr>
+                                        <tr>
+                                            <td>#2347</td>
+                                            <td>
+                                                <div class="order-owner">
+                                                    <img src="image/payment_3.jpg" alt="user image">
+                                                    <span>evelyn</span>
+                                                </div>
+                                            </td>
+                                            <td>2023-03-25</td>
+                                            <td>
+                                                <span class="order-status order-shipped">
+                                                    Shipped
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="payment-status payment-paid">
+                                                    <div class="dot"></div>
+                                                    <span>Paid</span>
+                                                </div>
+                                            </td>
+                                            <td>RM 123.45</td>
+                                        </tr>
+                                        <tr>
+                                            <td>#2348</td>
+                                            <td>
+                                                <div class="order-owner">
+                                                    <img src="image/payment_4.jpg" alt="user image">
+                                                    <span>John doe</span>
+                                                </div>
+                                            </td>
+                                            <td>2023-04-22</td>
+                                            <td>
+                                                <span class="order-status order-shipped">
+                                                    Shipped
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="payment-status payment-paid">
+                                                    <div class="dot"></div>
+                                                    <span>Paid</span>
+                                                </div>
+                                            </td>
+                                            <td>RM 123.45</td>
+                                        </tr>
+                                        <tr>
+                                            <td>#2349</td>
+                                            <td>
+                                                <div class="order-owner">
+                                                    <img src="image/payment_5.jpg" alt="user image">
+                                                    <span>evelyn</span>
+                                                </div>
+                                            </td>
+                                            <td>2023-05-20</td>
+                                            <td>
+                                                <span class="order-status order-ready">
+                                                    Ready
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="payment-status payment-pending">
+                                                    <div class="dot"></div>
+                                                    <span>Pending</span>
+                                                </div>
+                                            </td>
+                                            <td>RM 123.45</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END ORDERS TABLE -->
+                </div>
+            </div>
+        </div>
+        <!--    End Main Page -->
+
+
+        <!--    Start View Staff  -->
+        <div id="manage-staff" class="contain">
+            
+            <div class="staffbck">
+                <p class="staff-title">Staff</p>
+                <div class="staff">
+
+                    <!--    First Row   -->
+                    <div class="row-staff">
+
+                        <div class="staff-box" id="staff-1">
+                            <div class="staff-image">
+                                <img src="image/Staff_Icon.jpg">
+                            </div>
+
+                            <div class="staff-details">
+                                <h4>Name</h4>
+                                <p>Position</p>
+                            </div>
+
+                            <div class="staff-btn">
+                                <button type="button" class="btn-delete" onclick="hideStaff('staff-1')">Delete</button>
+                                <button type="button" class="btn-edit" onclick="openForm(event,'edit-profile')">Edit</button>
+                            </div>
+                        </div>
+
+                        <div class="staff-box" id="staff-2">
+                            <div class="staff-image">
+                                <img src="image/Staff_Icon.jpg">
+                            </div>
+
+                            <div class="staff-details">
+                                <h4>Name</h4>
+                                <p>Position</p>                                
+                            </div>
+
+                            <div class="staff-btn">
+                                <button type="button" class="btn-delete" onclick="hideStaff('staff-2')">Delete</button>
+                                <button type="button" class="btn-edit" onclick="openForm(event,'edit-profile')">Edit</button>
+                            </div>
+                        </div>
+
+                        <div class="staff-box" id="staff-3">
+                            <div class="staff-image">
+                                <img src="image/Staff_Icon.jpg">
+                            </div>
+
+                            <div class="staff-details">
+                                <h4>Name</h4>
+                                <p>Position</p>                                
+                            </div>
+
+                            <div class="staff-btn">
+                                <button type="button" class="btn-delete" onclick="hideStaff('staff-3')">Delete</button>
+                                <button type="button" class="btn-edit" onclick="openForm(event,'edit-profile')">Edit</button>
+                            </div>
+                        </div>
+
+                        <div class="staff-box" id="staff-4">
+                            <div class="staff-image">
+                                <img src="image/Staff_Icon.jpg">
+                            </div>
+
+                            <div class="staff-details">
+                                <h4>Name</h4>
+                                <p>Position</p>                                
+                            </div>
+
+                            <div class="staff-btn">
+                                <button type="button" class="btn-delete" onclick="hideStaff('staff-4')">Delete</button>
+                                <button type="button" class="btn-edit" onclick="openForm(event,'edit-profile')">Edit</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--    Second Row  -->
+                    <div class="row-staff">
+
+                        <div class="staff-box" id="staff-5">
+                            <div class="staff-image">
+                                <img src="image/Staff_Icon.jpg">
+                            </div>
+
+                            <div class="staff-details">
+                                <h4>Name</h4>        
+                                <p>Position</p>                        
+                            </div>
+
+                            <div class="staff-btn">
+                                <button type="button" class="btn-delete" onclick="hideStaff('staff-5')">Delete</button>
+                                <button type="button" class="btn-edit" onclick="openForm(event,'edit-profile')">Edit</button>
+                            </div>
+                        </div>
+
+                        <div class="staff-box" id="staff-6">
+                            <div class="staff-image">
+                                <img src="image/Staff_Icon.jpg">
+                            </div>
+
+                            <div class="staff-details">
+                                <h4>Name</h4>       
+                                <p>Position</p>                         
+                            </div>
+
+                            <div class="staff-btn">
+                                <button type="button" class="btn-delete" onclick="hideStaff('staff-6')">Delete</button>
+                                <button type="button" class="btn-edit" onclick="openForm(event,'edit-profile')">Edit</button>
+                            </div>
+                        </div>
+
+                        <div class="staff-box" id="staff-7">
+                            <div class="staff-image">
+                                <img src="image/Staff_Icon.jpg">
+                            </div>
+
+                            <div class="staff-details">
+                                <h4>Name</h4>        
+                                <p>Position</p>                        
+                            </div>
+
+                            <div class="staff-btn">
+                                <button type="button" class="btn-delete" onclick="hideStaff('staff-7')">Delete</button>
+                                <button type="button" class="btn-edit" onclick="openForm(event,'edit-profile')">Edit</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--    End View Staff  -->
+
+
+        <!--    Start Edit Profile  -->
+        <div id="edit-profile" class="contain">
+            
+            <div class="widget-box">
+                <div class="widget-title">
+                  <h5>Personal-info</h5>
+                </div>
+                <div class="widget-content nopadding">
+                    <form action="#" method="post" class="form-horizontal">
+                        <div class="control-group">
+                            <label class="control-label">Profile Photo</label>
+                            <div class="controls">
+                                <div class="photo" id="imgBox">
+                                    <input type="file" class="span12" id="file" onchange="loadFile(event)"/>
+                                    <label for="file"><img src="image/upload_icon.jpg" alt="Upload" class="upload-icon" title="Upload Photo"></label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label">First Name</label>
+                            <div class="controls">
+                                <input type="text" class="span11" placeholder=" First name" />
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label">Last Name</label>
+                            <div class="controls">
+                                <input type="text" class="span11" placeholder=" Last name" />
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label">Password input</label>
+                            <div class="controls">
+                                <input type="password"  class="span11" placeholder=" Enter Password"  />
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label">Company info</label>
+                            <div class="controls">
+                                <input type="text" class="span11" placeholder=" Company name" />
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label">Description field</label>
+                            <div class="controls">
+                                <input type="text" class="span11" placeholder=" Description field"/>
+                                <br>
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label">Phone Number</label>
+                            <div class="controls">
+                                <input type="text" class="span11" placeholder=" Phone Number"/>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="reset" class="btn">Clear</button>
+                            <button type="submit" class="btn">Save </button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <!--    End Edit Profile  -->
+
+
+        <!--    Start Add New User  -->
+        <div id="add-user" class="contain">
+            
+            <div class="widget-box">
+                <div class="widget-title">
+                  <h5>Personal-info</h5>
+                </div>
+                <div class="widget-content-add nopadding">
+                    <form action="#" method="post" class="form-horizontal">
+                        <div class="control-group">
+                            <label class="control-label">Profile Photo</label>
+                            <div class="controls">
+                                <div class="photo" id="imgBox">
+                                    <input type="file" class="span12" id="file" onchange="loadFile(event)"/>
+                                    <label for="file"><img src="image/upload_icon.jpg" alt="Upload" class="upload-icon" title="Upload Photo"></label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label">First Name</label>
+                            <div class="controls">
+                                <input type="text" class="span11" placeholder=" First name" />
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label">Last Name</label>
+                            <div class="controls">
+                                <input type="text" class="span11" placeholder=" Last name" />
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label">Email</label>
+                            <div class="controls">
+                                <input type="email" class="span11" placeholder=" Email" />
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label">Password input</label>
+                            <div class="controls">
+                                <input type="password"  class="span11" placeholder=" Enter Password"  />
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label">Position</label>
+                            <div class="controls">
+                                <input type="text" class="span11" placeholder=" Position" />
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label">Phone Number</label>
+                            <div class="controls">
+                                <input type="text" class="span11" placeholder=" Phone Number"/>
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label">Description field</label>
+                            <div class="controls">
+                                <input type="text" class="span11" placeholder=" Description field"/>
+                                <br>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="reset" class="btn">Clear</button>
+                            <button type="submit" class="btn">Add </button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <!--    End Add New User  -->
+
+
+        <!--    Start View Item Page 1 -->
+        <div id="view-item-page-1" class="contain">
+            <div class="main-bar">
+
+                <div class="top-selection">
+                    <button onclick="openForm(event,'view-item-page-1') , topFunction()">
+                        <h3>All</h3>
+                    </button>
+
+                    <button onclick="openForm(event,'boyShirt') , topFunction()">
+                        <h3>Boy Shirts</h3>
+                    </button>
+
+                    <button onclick="openForm(event,'boyPant') , topFunction()">
+                        <h3>Boy Pants</h3>
+                    </button>
+
+                    <button onclick="openForm(event,'girlShirt') , topFunction()">
+                        <h3>Girl Shirts</h3>
+                    </button>
+                </div>
+                
+                <div class="product">
+                    <div class="row-product">
+
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bp1.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Formal Slim Long Pants<br># Khaki</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 19.98</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                                
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs2.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Long Sleeve Shirt Men</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 24.60</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs1.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Thick Hoodie Long Sleeve</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 22.00</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                                                
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bp3.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Formal Slim Long Pants<br># Black</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 19.98</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                                
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs3.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Pure Polo Shirts Cotton</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 52.00</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+        
+                    </div>
+                    <!--    End Row -->
+
+                    <br><br>
+                    
+                    <!--    Next Row    -->
+                    <div class="row-product">
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs3.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Back Tie Bow Cropped Belly Button Shirt</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 18.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bp5.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Nike Long Sports Pants<br># Black</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 15.87</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                                
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs4.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Korean Style Floral Dress</a></th>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 29.99</p></td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs5.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Thrasher Skateboard Magazine T-Shirt</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 29.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bp7.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Summer Sports Multi Pocket Cargo Pants<br># Green</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 23.91</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+
+                    </div>  
+                    <!--    End Row -->
+
+                    <br><br>
+
+                    <!--    Next Row    -->
+                    <div class="row-product">
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs6.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#"> Korean Summer Loose Fashion Short Sleeve</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 19.80</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                                
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs6.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Female Spring New Tassel Waist Slim Tube TopDenim Dress</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 78.88</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                                
+
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bp9.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Multi Pocket Cargo Long Pants<br># Black</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 28.91</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                                
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs7.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Summer Sports Set Triple Bar Short Sleeve T-shirt </a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 50.40</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs8.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Loose Wine Red Thickened Coat Hooded Trendy Sweater</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 84.00</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--    End Row -->
+                    
+                    <br><br>
+
+                    <!--    Next Row    -->
+                    <div class="row-product">
+                        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bp10.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Multi Pocket Cargo Long Pants<br># Green</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 28.91</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+    
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs9.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Summer Black Women Dress Korean Style</a></th>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 46.49</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs9.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Summer T-Shirt Round Neck Half-Sleeve <br># Glues</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 48.00</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs10.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Summer T-Shirt Round Neck Half-Sleeve <br># Khaki</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 48.00</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs10.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Versatile Long Sleeve Shirt Dress</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 35.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--    End Row -->
+
+                    <br><br>
+
+                    <!--    Next Row    -->
+                    <div class="row-product">
+
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs25.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Japanese Long Sleeve Shirt Men Loose<br># Grey</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 22.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs22.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Cartoon Stitch Short Sleeve</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 19.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                    
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs23.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">HI TEDDY BEAR Oversized T-Shirts</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 35.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+    
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs24.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Cute Bear Short-sleeved T-shirt Women</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 34.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs25.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Fake Two-piece Basketball Short-sleeved T-shirt</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 19.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--    End Row -->
+                </div>
+            </div>
+
+            <div class="page-break">
+                <a1>< &nbsp; </a1>
+                <a onclick="openForm(event,'view-item-page-1')" style="color:red;">1</a>
+                <a1> &nbsp; | &nbsp; </a1>
+                <a onclick="openForm(event,'view-item-page-2') , topFunction()" >2</a>
+                <a1> &nbsp; | &nbsp; </a1>
+                <a onclick="openForm(event,'view-item-page-3') , topFunction()" >3</a>
+                <a1> &nbsp; ></a1>
+            </div>
+
+        </div>
+        <!--    End View Item Page 1  -->
+        
+
+        <!--    Start View Item Page 2 -->
+        <div id="view-item-page-2" class="contain">
+            <div class="main-bar">
+
+                <div class="top-selection">
+                    <button onclick="openForm(event,'view-item-page-1') , topFunction()">
+                        <h3>All</h3>
+                    </button>
+
+                    <button onclick="openForm(event,'boyShirt') , topFunction()">
+                        <h3>Boy Shirts</h3>
+                    </button>
+
+                    <button onclick="openForm(event,'boyPant') , topFunction()">
+                        <h3>Boy Pants</h3>
+                    </button>
+
+                    <button onclick="openForm(event,'girlShirt') , topFunction()">
+                        <h3>Girl Shirts</h3>
+                    </button>
+                </div>
+
+                <div class="product">
+                    <div class="row-product">
+
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs11.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Summer Oversize Cotton T-shirt<br># Nike</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 43.00</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                                
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs12.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Summer Oversize Sport T-shirt<br># T289 White</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 56.00</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bp11.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Casual Multi Pocket straight pants<br># Green</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 20.91</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs12.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">V-neck hollowed-out short-sleevedsweater</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 48.82</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                    
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs13.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Spring Summer New Style FrenchCorduroy Sling Dress</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 49.10</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--    End Row -->
+
+                    <br><br>
+                    
+                    <!--    Next Row    -->
+                    <div class="row-product">
+
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs13.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Oversized Neck Short Sleeve T-Shirt<br># Dark Grey</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 12.50</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bp13.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Multi Pocket Sports Long Pants<br># Black</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 20.91</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs14.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Oversized Neck Short Sleeve T-Shirt<br># Black</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 12.50</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs15.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Oversized Neck Short Sleeve T-Shirt<br># White</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 12.50</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bp14.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Tattered Jeans Spring Slim Pants Men</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 35.00</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!--    End Row -->
+
+                    <br><br>
+
+                    <!--    Next Row    -->
+                    <div class="row-product">
+
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs16.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Oversized T-Shirt Men<br># Orange</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 31.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs16.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">AMEENA MINIKURUNG</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 69.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs17.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Oversized Hoodie Men<br># Black</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 34.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                                
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs18.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Oversized Hoodie Men<br># Brown</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 34.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs17.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Women Slack Short Sleeve T-shirt</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 39.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--    End Row -->
+
+                    <br><br>
+
+                    <!--    Next Row    -->
+                    <div class="row-product">
+
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs19.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Oversized Hoodie Men<br># White</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RN 34.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs18.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Oversize Women Short Sleeve</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 35.90</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bp15.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">UNIQLO Slim Fit Pants Men</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 24.08</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs20.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Oversized Hoodie Men<br># Light Grey</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 34.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs21.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Oversized Men T-shirt Cotton<br># Green</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 21.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--    End Row -->
+
+                    <br><br>
+
+                    <!--    Next Row    -->
+                    <div class="row-product">
+
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs20.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">MARSHMELLO T-SHIRT SMILE COTTON</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 29.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs22.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Oversized Men T-shirt Cotton<br># Blue</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 21.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs21.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Streetwear Kawaii Cartoon Dinosaur Tshirt</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 19.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bp8.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Summer Sports Multi Pocket Cargo Pants<br># Black</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 23.91</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs24.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Oversized Men T-shirt Cotton<br># Red</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RN 21.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--    End Row -->
+                </div>
+            </div>
+
+            <div class="page-break">
+                <a1>< &nbsp; </a1>
+                <a onclick="openForm(event,'view-item-page-1') , topFunction()">1</a>
+                <a1> &nbsp; | &nbsp; </a1>
+                <a onclick="openForm(event,'view-item-page-2')" style="color:red;">2</a>
+                <a1> &nbsp; | &nbsp; </a1>
+                <a onclick="openForm(event,'view-item-page-3') , topFunction()">3</a>
+                <a1> &nbsp; ></a1>
+            </div>
+
+        </div>
+        <!--    End View Item Page 2    -->
+
+
+        <!--    Start View Item Page 3 -->
+        <div id="view-item-page-3" class="contain">
+            <div class="main-bar">
+
+                <div class="top-selection">
+                    <button onclick="openForm(event,'view-item-page-1') , topFunction()">
+                        <h3>All</h3>
+                    </button>
+
+                    <button onclick="openForm(event,'boyShirt') , topFunction()">
+                        <h3>Boy Shirts</h3>
+                    </button>
+
+                    <button onclick="openForm(event,'boyPant') , topFunction()">
+                        <h3>Boy Pants</h3>
+                    </button>
+
+                    <button onclick="openForm(event,'girlShirt') , topFunction()">
+                        <h3>Girl Shirts</h3>
+                    </button>
+                </div>
+
+                <div class="product">
+                    <div class="row-product">
+
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs1.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Summer Basketball Polo T Shirt Men</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 23.00</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bp2.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Formal Slim Long Pants<br># Grey</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 19.98</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs2.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">V-neck Pleated Shirt Collarbone Top</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 18.39</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                                                
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bp4.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#" style="font-size: 18px; font-weight: 400;">Casual Long Sports Pants<br># Black</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 15.00</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                                
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs4.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Round Neck T-shirt Fashionable Loose</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 28.80</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+        
+                    </div>  
+                    <!--    End Row -->
+
+                    <br><br>    
+
+                    <!--    Next Row    -->
+                    <div class="row-product">
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bp6.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Adidas Long Sports Pants<br># Black</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 15.87</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs5.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Temperament Bubble Sleeve High Waist With Thin Pants</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 47.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs23.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Oversized Men T-shirt Cotton<br># Khaki</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 21.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                                                
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs7.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Suspender Dress Koreanstyle</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 27.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                                
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs8.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Women Polo Collar Split Slim Trim Irregular Dress</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 29.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>  
+                    <!--    End Row -->
+
+                    <br><br>
+                    
+                    <!--    Next Row    -->                    
+                    <div class="row-product">
+                        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs11.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">FrenchVintage Niche Floral Dress Summer Design</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 51.33</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bp12.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Multi Pocket Sports Long Pants<br># Blue</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 20.91</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs14.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Dress Abaya Cutting Loose</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 59.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                                                
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs15.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Japanese Cartoon Sleeve Oversize</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 13.75</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                                
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs19.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">T Shirt Short Sleeve Tops Round Neck</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 24.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--    End Row -->
+                </div>
+            </div>
+
+            <div class="page-break">
+                <a1>< &nbsp; </a1>
+                <a onclick="openForm(event,'view-item-page-1') , topFunction()">1</a>
+                <a1> &nbsp; | &nbsp; </a1>
+                <a onclick="openForm(event,'view-item-page-2') , topFunction()">2</a>
+                <a1> &nbsp; | &nbsp; </a1>
+                <a onclick="openForm(event,'view-item-page-3')" style="color:red;">3</a>
+                <a1> &nbsp; ></a1>
+            </div>
+
+        </div>
+        <!--    End View Item Page 3    -->
+
+
+        <!--    Start Boy Shirts  -->
+        <div id="boyShirt" class="contain">
+            <div class="main-bar">
+                <div class="product">
+                    <div class="row-product">
+
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs1.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Summer Basketball Polo T Shirt Men</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 23.00</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs2.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Long Sleeve Shirt Men</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 24.60</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs3.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Pure Polo Shirts Cotton</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 52.00</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                                                
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs4.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Round Neck T-shirt Fashionable Loose</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 28.80</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                                
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs5.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Thrasher Skateboard Magazine T-Shirt</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 29.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+        
+                    </div>  <!--End Row-->
+
+                    <br><br>    <!--Next Row-->
+                    
+                    <div class="row-product">
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs6.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#"> Korean Summer Loose Fashion Short Sleeve</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 19.80</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs7.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Summer Sports Set Triple Bar Short Sleeve T-shirt </a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 50.40</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                                
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs8.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Loose Wine Red Thickened Coat Hooded Trendy Sweater</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 84.00</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs9.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Summer T-Shirt Round Neck Half-Sleeve <br># Glues</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 48.00</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs10.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Summer T-Shirt Round Neck Half-Sleeve <br># Khaki</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 48.00</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>  <!--End Row-->
+
+                    <br><br>    <!--Next Row-->
+                    
+                    <div class="row-product">
+                        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs11.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Summer Oversize Cotton T-shirt<br># Nike</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 43.00</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                                
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs12.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Summer Oversize Sport T-shirt<br># T289 White</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 56.00</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                                
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs13.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Oversized Neck Short Sleeve T-Shirt<br># Dark Grey</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 12.50</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs14.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Oversized Neck Short Sleeve T-Shirt<br># Black</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 12.50</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs15.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Oversized Neck Short Sleeve T-Shirt<br># White</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 12.50</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>  <!--End Row-->
+                    
+                    <br><br>    <!--Next Row-->
+                    
+                    <div class="row-product">
+                        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs16.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Oversized T-Shirt Men<br># Orange</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 31.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                                
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs17.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Oversized Hoodie Men<br># Black</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 34.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                                
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs18.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Oversized Hoodie Men<br># Brown</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 34.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                                
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs19.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Oversized Hoodie Men<br># White</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RN 34.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                                
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs20.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Oversized Hoodie Men<br># Light Grey</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 34.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>  <!--End Row-->
+
+                    <br><br>    <!--Next Row-->
+                    
+                    <div class="row-product">
+                        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs21.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Oversized Men T-shirt Cotton<br># Green</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 21.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                                
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs22.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Oversized Men T-shirt Cotton<br># Blue</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 21.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                                
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs23.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Oversized Men T-shirt Cotton<br># Khaki</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 21.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                                
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs24.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Oversized Men T-shirt Cotton<br># Red</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RN 21.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                                
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs25.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Japanese Long Sleeve Shirt Men Loose<br># Grey</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 22.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>  <!--End Row-->
+                </div>
+            </div>
+        </div>
+        <!--    End Boy Shits   -->
+
+
+        <!--    Start Boy Pants -->
+        <div id="boyPant" class="contain">
+            <div class="main-bar">                    
+                <div class="product">
+                    <div class="row-product">
+
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bp1.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Formal Slim Long Pants<br># Khaki</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 19.98</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="BP1_Item_Details.html">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bp2.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Formal Slim Long Pants<br># Grey</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 19.98</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bp3.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Formal Slim Long Pants<br># Black</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 19.98</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                                                
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bp4.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#" style="font-size: 18px; font-weight: 400;">Casual Long Sports Pants<br># Black</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 15.00</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                                
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bp5.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Nike Long Sports Pants<br># Black</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 15.87</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+        
+                    </div>  <!--End Row-->
+
+                    <br><br>    <!--Next Row-->
+                    
+                    <div class="row-product">
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bp6.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Adidas Long Sports Pants<br># Black</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 15.87</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bp7.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Summer Sports Multi Pocket Cargo Pants<br># Green</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 23.91</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bp8.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Summer Sports Multi Pocket Cargo Pants<br># Black</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 23.91</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                                                
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bp9.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Multi Pocket Cargo Long Pants<br># Black</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 28.91</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                                
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bp10.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Multi Pocket Cargo Long Pants<br># Green</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 28.91</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>  <!--End Row-->
+
+                    <br><br>    <!--Next Row-->
+                    
+                    <div class="row-product">
+                        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bp11.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Casual Multi Pocket straight pants<br># Green</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 20.91</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bp12.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Multi Pocket Sports Long Pants<br># Blue</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 20.91</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bp13.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Multi Pocket Sports Long Pants<br># Black</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 20.91</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                                                
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bp14.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Tattered Jeans Spring Slim Pants Men</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 35.00</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                                
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bp15.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">UNIQLO Slim Fit Pants Men</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 24.08</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>  <!--End Row-->
+
+                </div>
+            </div>
+        </div>
+        <!--    End Boy Pants  -->
+
+
+        <!--    Start Girl Shirt    -->
+        <div id="girlShirt" class="contain">
+            <div class="main-bar">
+                <p>Searching for ' <b>Women Shirts</b> '</p>
+                <br>
+                <div class="product">
+                    <div class="row-product">
+
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs1.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Thick Hoodie Long Sleeve</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 22.00</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs2.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">V-neck Pleated Shirt Collarbone Top</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 18.39</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs3.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Back Tie Bow Cropped Belly Button Shirt</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 18.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs4.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Korean Style Floral Dress</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 29.99</p></td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs5.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Bubble Sleeve High Waist With Thin Pants</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 47.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        
+                    </div>  <!--End Row-->
+
+                    <br><br>    <!--Next Row-->
+                    
+                    <div class="row-product">
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs6.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Female Spring New Tassel Waist Slim Tube TopDenim Dress</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 78.88</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs7.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Suspender Dress Koreanstyle</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 27.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                    
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs8.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Women Polo Collar Split Slim Trim Irregular Dress</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 29.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+    
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs9.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Summer Black Women Dress Korean Style</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 46.49</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs10.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Versatile Long Sleeve Shirt Dress</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 35.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>  <!--End Row-->
+
+                    <br><br>    <!--Next Row-->
+                    
+                    <div class="row-product">
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs11.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">FrenchVintage Niche Floral Dress Summer Design</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 51.33</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs12.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">V-neck hollowed-out short-sleevedsweater</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 48.82</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                    
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs13.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Spring Summer New Style FrenchCorduroy Sling Dress</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 49.10</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+    
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs14.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Dress Abaya Cutting Loose</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 59.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs15.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Japanese Cartoon Sleeve Oversize</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 13.75</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>  <!--End Row-->
+                    
+                    <br><br>    <!--Next Row-->
+                    
+                    <div class="row-product">
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs16.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">AMEENA MINIKURUNG</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 69.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs17.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Women Slack Short Sleeve T-shirt</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 39.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                    
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs18.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Oversize Women Short Sleeve</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 35.90</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+    
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs19.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">T Shirt Short Sleeve Tops Round Neck</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 24.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs20.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">MARSHMELLO T-SHIRT SMILE COTTON</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 29.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>  <!--End Row-->
+
+                    <br><br>    <!--Next Row-->
+                    
+                    <div class="row-product">
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs21.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Streetwear Kawaii Cartoon Dinosaur Tshirt</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 19.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+        
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs22.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Cartoon Stitch Short Sleeve</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 19.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                    
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs23.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">HI TEDDY BEAR Oversized T-Shirts</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 35.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+    
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs24.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Cute Bear Short-sleeved T-shirt Women</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 34.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs25.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Fake Two-piece Basketball Short-sleeved T-shirt</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 19.99</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>  <!--End Row-->
+                </div>
+            </div>
+        </div>
+        <!--    End Girl Shirt  -->
+
+
+    </div>
+
+    <!--    Chart Table   -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <script src="Admin_Fx.js"></script>
+</body>
+</html>

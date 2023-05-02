@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Detail</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Item_Details_Style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="nav-bar">
+            <button onclick="window.location.href = 'After_login.html';" type="button">
+                <h1 class="title">
+                    <img src="image/Logo.jpg" height="150px">
+                </h1>
+            </button>
+                
+            <u1 class="menu">
+                <button onclick="window.location.href = 'After_login.html';" type="button">
+                    <li><a>HOME</a></li>
+                </button>
+
+                <button onclick="window.location.href = 'Contact.html';" type="button">
+                    <li><a>CONTACTS</a></li>
+                </button>
+
+                <button onclick="window.location.href = 'About.html';" type="button">
+                    <li><a>ABOUTS</a></li>
+                </button>
+
+                <button onclick="window.location.href = 'Shoping_Cart.html';" type="button" title="Shopping Cart">
+                    <i class="fa fa-shopping-cart" style="font-size: 30px ; color: red"></i>
+                </button>
+                
+                <span class="dropdown">
+                    <button type="button" class="menu">
+                        <li><img src="image/User_Logo.jpg" width="40px" height="35px"/></li>
+                    </button>
+
+                    <div class="dropdown-content">
+                        <a href="#">My Account</a>
+                        <a href="#">Setting</a>
+                        <a href="index.html">Log Out</a>
+                    </div>
+                </span>
+
+            </u1>
+        </div>
+    </div>
+
+    <div class="container-1">
+            
+        <div class="left">
+            <img src="image/bp1.jpg">
+        </div>
+
+        <div class="right">
+            <h1>Formal Slim Long Pants<br># Khaki</h1>
+            <div class="stars">
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <br>
+            <h2>RM 19.98</h2>
+
+            <div class="show-size">
+                <h3 onclick="selectSize('s')" id="selected-s"><a href="#">S</a></h3>
+                <h4></h4>
+                <h3 onclick="selectSize('m')" id="selected-m"><a href="#">M</a></h3>
+                <h4></h4>
+                <h3 onclick="selectSize('l')" id="selected-l"><a href="#">L</a></h3>
+                <h4></h4>
+                <h3 onclick="selectSize('xl')" id="selected-xl"><a href="#">XL</a></h3>
+                <h4></h4>
+                <h3 onclick="selectSize('2xl')" id="selected-2xl"><a href="#">2-XL</a></h3>
+                <h4></h4>
+                <h3 onclick="selectSize('3xl')" id="selected-3xl"><a href="#">3-XL</a></h3>
+            </div>
+            
+            <div class="add-cart">
+                <h3 id="cart"><a onclick="addCart()">Add Cart</a></h3>
+                <h4></h4>
+                <h3 id="buy-now"><a href="#">Buy Now</a></h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-2">
+        <h1>Comment & Rating</h1>
+        <div class="underline"></div>
+        <form method="post" id="contact_form">
+            <div class="name">
+                <label for="name"></label>
+                <input type="text" placeholder="Name" name="name" id="name_input" required>
+            </div>
+
+            <div class="email">
+                <label for="email"></label>
+                <input type="email" placeholder="Email" name="email" id="email_input" required>
+            </div>
+
+            <div class="rate">
+                <input type="radio" id="star5" name="rate" value="5" />
+                <label for="star5" title="5-Star"></label>
+
+                <input type="radio" id="star4" name="rate" value="4" />
+                <label for="star4" title="4-Star"></label>
+
+                <input type="radio" id="star3" name="rate" value="3" />
+                <label for="star3" title="3-Star"></label>
+
+                <input type="radio" id="star2" name="rate" value="2" />
+                <label for="star2" title="2-Star"></label>
+
+                <input type="radio" id="star1" name="rate" value="1" />
+                <label for="star1" title="1-Star"></label>
+            </div>
+
+            <div class="message">
+                <label for="message"></label>
+                <textarea name="message" placeholder="Drop Your Comment Here" id="message_input" cols="30" rows="5" required></textarea>
+            </div>
+                
+            <div class="submit">
+                <input type="submit" value="Send Message" id="form_button" />
+            </div>
+
+        </form>
+    </div>
+
+    <script src="Item_Details_Fx.js"></script>
+</body>
+</html>
