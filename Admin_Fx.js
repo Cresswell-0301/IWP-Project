@@ -74,6 +74,21 @@ function topFunction() {
 //  Hide Staff
 function hideStaff(staffID) {
     var staffElement = document.getElementById(staffID);
-    staffElement.style.display = "none";
-    alert('Successfully Deleted')
+    var staffAns = confirm('Confirm Delete ?');
+
+    if(staffAns == true){
+        staffElement.style.display = "none";
+        alert('Successfully Deleted');
+    }
+}
+
+// Hide Item
+function hideItem(itemID) {
+    var itemElement = document.getElementById(itemID);
+    var itemAns = confirm('Confirm Delete ?');
+
+    if(itemAns == true){
+        itemElement.style.display = "none";
+        alert('Successfully Deleted');
+    }
 }
