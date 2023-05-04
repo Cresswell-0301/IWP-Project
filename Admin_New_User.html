@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New User</title>
+    <link rel="stylesheet" href="Admin_Style.css">
+</head>
+<body>
+    <div class="container">
+
+        <!--    Start Add New User  -->
+        <div class="container-1">
+            <div class="widget-box">
+                <div class="widget-title h5-item">
+                  <h5>Add New User Info</h5>
+                </div>
+                <div class="widget-content-add nopadding">
+                    <form action="Admin.html" method="post" class="form-horizontal">
+                        <div class="control-group">
+                            <label class="control-label">Profile Photo</label>
+                            <div class="controls">
+                                <div class="photo" id="NewImgBox">
+                                    <input type="file" class="span12" id="file" onchange="loadNew(event)"/>
+                                    <label for="file"><img src="image/upload_icon.jpg" alt="Upload" class="upload-icon-new" title="Upload Photo"></label>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="control-group">
+                            <label class="control-label">First Name</label>
+                            <div class="controls">
+                                <input type="text" class="span11" placeholder=" First name" />
+                            </div>
+                        </div>
+    
+                        <div class="control-group">
+                            <label class="control-label">Last Name</label>
+                            <div class="controls">
+                                <input type="text" class="span11" placeholder=" Last name" />
+                            </div>
+                        </div>
+    
+                        <div class="control-group">
+                            <label class="control-label">Email</label>
+                            <div class="controls">
+                                <input type="email" class="span11" placeholder=" Email" />
+                            </div>
+                        </div>
+    
+                        <div class="control-group">
+                            <label class="control-label">Password input</label>
+                            <div class="controls">
+                                <input type="password"  class="span11" placeholder=" Enter Password"  />
+                            </div>
+                        </div>
+    
+                        <div class="control-group">
+                            <label class="control-label">Position</label>
+                            <div class="controls">
+                                <input type="text" class="span11" placeholder=" Position" />
+                            </div>
+                        </div>
+    
+                        <div class="control-group">
+                            <label class="control-label">Phone Number</label>
+                            <div class="controls">
+                                <input type="text" class="span11" placeholder=" Phone Number"/>
+                            </div>
+                        </div>
+    
+                        <div class="control-group">
+                            <label class="control-label">Description field</label>
+                            <div class="controls">
+                                <input type="text" class="span11" placeholder=" Description field"/>
+                                <br>
+                            </div>
+                        </div>
+    
+                        <div class="form-actions">
+                            <button type="reset" class="btn">Clear</button>
+                            <button type="submit" class="btn">Add </button>
+                        </div>
+                    </form>
+    
+                </div>
+            </div>
+        </div>
+        <!--    End Add New User  -->
+    </div>
+
+    <script src="Admin_New_User_Profile.js"></script>
+</body>
+</html>

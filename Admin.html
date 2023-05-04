@@ -38,7 +38,7 @@
             </div>
 
             <div class="selection-3">
-                <button onclick="openForm(event,'add-user')">
+                <button onclick="window.location.href = 'Admin_New_User.html'">
                     <h3><img src="image/add_staff_icon.jpg">Add&nbsp;Staff</h3>
                 </button>
             </div>
@@ -480,8 +480,8 @@
         <div id="edit-profile" class="contain">
             
             <div class="widget-box">
-                <div class="widget-title">
-                  <h5>Personal-info</h5>
+                <div class="widget-title h5-item">
+                    <h5>Edit Personal Info</h5>
                 </div>
                 <div class="widget-content nopadding">
                     <form action="#" method="post" class="form-horizontal">
@@ -550,91 +550,9 @@
         <!--    End Edit Profile  -->
 
 
-        <!--    Start Add New User  -->
-        <div id="add-user" class="contain">
-            
-            <div class="widget-box">
-                <div class="widget-title">
-                  <h5>Personal-info</h5>
-                </div>
-                <div class="widget-content-add nopadding">
-                    <form action="#" method="post" class="form-horizontal">
-                        <div class="control-group">
-                            <label class="control-label">Profile Photo</label>
-                            <div class="controls">
-                                <div class="photo" id="imgBox">
-                                    <input type="file" class="span12" id="file" onchange="loadFile(event)"/>
-                                    <label for="file"><img src="image/upload_icon.jpg" alt="Upload" class="upload-icon" title="Upload Photo"></label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="control-group">
-                            <label class="control-label">First Name</label>
-                            <div class="controls">
-                                <input type="text" class="span11" placeholder=" First name" />
-                            </div>
-                        </div>
-
-                        <div class="control-group">
-                            <label class="control-label">Last Name</label>
-                            <div class="controls">
-                                <input type="text" class="span11" placeholder=" Last name" />
-                            </div>
-                        </div>
-
-                        <div class="control-group">
-                            <label class="control-label">Email</label>
-                            <div class="controls">
-                                <input type="email" class="span11" placeholder=" Email" />
-                            </div>
-                        </div>
-
-                        <div class="control-group">
-                            <label class="control-label">Password input</label>
-                            <div class="controls">
-                                <input type="password"  class="span11" placeholder=" Enter Password"  />
-                            </div>
-                        </div>
-
-                        <div class="control-group">
-                            <label class="control-label">Position</label>
-                            <div class="controls">
-                                <input type="text" class="span11" placeholder=" Position" />
-                            </div>
-                        </div>
-
-                        <div class="control-group">
-                            <label class="control-label">Phone Number</label>
-                            <div class="controls">
-                                <input type="text" class="span11" placeholder=" Phone Number"/>
-                            </div>
-                        </div>
-
-                        <div class="control-group">
-                            <label class="control-label">Description field</label>
-                            <div class="controls">
-                                <input type="text" class="span11" placeholder=" Description field"/>
-                                <br>
-                            </div>
-                        </div>
-
-                        <div class="form-actions">
-                            <button type="reset" class="btn">Clear</button>
-                            <button type="submit" class="btn">Add </button>
-                        </div>
-                    </form>
-
-                </div>
-            </div>
-        </div>
-        <!--    End Add New User  -->
-
-
         <!--    view-item   -->
         <div id="view-item" class="contain">
             <div class="main-bar">
-
                 <div class="top-selection">
                     <button onclick="openForm(event,'boyShirt') , topFunction()">
                         <h3>Boy Shirts</h3>
@@ -648,33 +566,8 @@
                         <h3>Girl Shirts</h3>
                     </button>
                 </div>
-                
-                <div class="product">
-                    <div class="row-product">
-
-                        <div class="item-box">
-                            <div class="item-image">
-                                <img src="image\bp1.jpg">
-                            </div>
-                            <div class="item-details">
-                                <br>
-                                <table>
-                                    <tr>
-                                        <th><a href="#">Formal Slim Long Pants<br># Khaki</a></th>
-                                    </tr>
-
-                                    <tr>
-                                        <td class="bottom-details"><p>RM 19.98</p></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td class="bottom-details">
-                                            <a href="#">Buy</a>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
+            </div>
+        </div>
 
 
         <!--    Start Boy Shirts  -->
@@ -719,7 +612,7 @@
 
                                     <tr>
                                         <td class="bottom-details">
-                                            <a onclick="openForm(event,'#')">Edit</a>
+                                            <a onclick="window.location.href = 'Admin_Edit_Item.html'">Edit</a>
                                         </td>
                                     </tr>
 
@@ -3079,15 +2972,6 @@
         </div>
         <!--    End Girl Shirt  -->
 
-
-        <!--    Start Edit Items -->
-        <div id="edit-item" class="contain">
-            <div>
-                
-            </div>
-
-        </div>
-        <!--    End Edit Item   -->
 
     </div>
 

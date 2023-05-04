@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Item</title>
+    <link rel="stylesheet" href="Admin_Style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container-1">
+            <!--    Start Edit Items -->
+            <div class="widget-box">
+                <div class="widget-title h5-item">
+                <h5>Edit Item</h5>
+                </div>
+                <div class="widget-content-add-item nopadding">
+                    <form action="Admin.html" method="post" class="form-horizontal" >
+                        <div class="control-group">
+                            <label class="control-label">Item Photo</label>
+                            <div class="controls">
+                                <div class="item-photo" id="editItemImgbox">
+                                    <input type="file" class="span12" id="file" onchange="loadImg(event)"/>
+                                    <label for="file"><img src="image/upload_icon.jpg" alt="Upload" class="upload-icon-new" title="Upload Photo"></label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label">Item Name</label>
+                            <div class="controls">
+                                <input type="text" class="span11" placeholder=" Item Name" />
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label">Price RM</label>
+                            <div class="controls">
+                                <input type="text" class="span11" placeholder=" Price" />
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label">Size S Quantity</label>
+                            <div class="controls">
+                                <input type="number" class="span11" placeholder="S Quantity" min="0"/>
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label">Size M Quantity</label>
+                            <div class="controls">
+                                <input type="number" class="span11" placeholder="M Quantity" min="0"/>
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label">Size L Quantity</label>
+                            <div class="controls">
+                                <input type="number" class="span11" placeholder="L Quantity" min="0"/>
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label">Size XL Quantity</label>
+                            <div class="controls">
+                                <input type="number" class="span11" placeholder="XL Quantity" min="0"/>
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label">Size 2-XL Quantity</label>
+                            <div class="controls">
+                                <input type="number" class="span11" placeholder="2-XL Quantity" min="0"/>
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label">Size 3-XL Quantity</label>
+                            <div class="controls">
+                                <input type="number" class="span11" placeholder="3-XL Quantity" min="0"/>
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label">Description field</label>
+                            <div class="control-s">
+                                <textarea type="text" class="span11" placeholder=" Description field"></textarea>
+                                <br>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="reset" class="btn">Clear</button>
+                            <button type="submit" class="btn">Add </button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+            <!--    End Edit Item   -->
+        </div>
+    </div>
+
+    <script src="Admin_Edit_Item_Profile.js"></script>
+</body>
+</html>

@@ -130,6 +130,13 @@ body{
 .switchlink.active {
     background-color: #ccc;
 }
+.container-1{
+    box-shadow: rgba(149, 157, 165, 0.071) 10px 0px 30px;
+    border-radius: 8px;
+    padding-left: var(--sidebar-size);
+    margin-top: 20px;
+    margin-left: 5%;
+}
 
 
 /*  Manage Staff    */
@@ -241,6 +248,9 @@ body{
 	line-height: 12px;
 	margin: 0;
 }
+.h5-item {
+    text-align: center;
+}
 .widget-content {
     height: 570px;
 	padding:15px;
@@ -248,7 +258,12 @@ body{
 }
 .widget-content-add {
     height: 630px;
-	padding:15px;
+	padding: 15px;
+	border-bottom: 2px solid #cdcdcd;
+}
+.widget-content-add-item {
+    height: 880px;
+	padding: 15px;
 	border-bottom: 2px solid #cdcdcd;
 }
 .nopadding {
@@ -269,6 +284,13 @@ body{
     margin-top: -33px;
 	padding: 10px 0;
 }
+.control-s {
+	padding: 10px 0;
+}
+.control-s textarea{
+    width: 423px;
+    height: 100px;
+}
 .span11{
     font-size: 18px;
 }
@@ -276,8 +298,15 @@ body{
     width: 110px;
     height: 100px;
     border-radius: 10px;
-    background-size: cover;
+    background-size: 102px;
     background-image: url('image/Staff_Icon.jpg');
+}
+.item-photo{
+    width: 110px;
+    height: 100px;
+    border-radius: 10px;
+    background-size: cover;
+    background-image: url('image/New_Item_Image.jpg');
 }
 .span12{
     display: none;
@@ -285,25 +314,37 @@ body{
 .upload-icon{
     position: absolute;
     width: 40px;
-    left: 50%;
+    left: 65%;
     top: 136px;
     cursor: pointer;
 }
-.form-horizontal .form-actions {
+.upload-icon-new{
+    position: absolute;
+    width: 40px;
+    left: 55%;
+    top: 136px;
+    cursor: pointer;
+}
+.form-horizontal {
     display: block;
     margin-left: 220px;
     margin-right: 464px;
     padding: 2px 2px;
     height: 42px;
 }
+.form-actions {
+    display: block;
+    margin-left: 20px;
+    margin-right: -230px;
+    padding: 2px 2px;
+}
 .btn {
     font-size: 16px;
 	border: 0.5px solid black; 
     padding: 10px 10px;
     border-radius: 10px;
-    margin: 0px 24px;
+    margin: 0px 75px;
 }
-
 .btn:hover{
     background-color: #c4c0c0;
     font-weight: bold;

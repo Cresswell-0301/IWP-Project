@@ -59,11 +59,6 @@ let customer_options = {
     }
 }
 
-//  Edit Profile Photo
-var imgBox = document.getElementById('imgBox');
-var loadFile = function(event){
-    imgBox.style.backgroundImage = "url(" +URL.createObjectURL(event.target.files[0])+ ")";
-}
 
 // Scroll Top
 function topFunction() {
@@ -91,4 +86,10 @@ function hideItem(itemID) {
         itemElement.style.display = "none";
         alert('Successfully Deleted');
     }
+}
+
+//  Edit Profile Photo
+var imgBox = document.getElementById('imgBox');
+var loadFile = function(event){
+    imgBox.style.backgroundImage = "url(" +URL.createObjectURL(event.target.files[0])+ ")";
 }
