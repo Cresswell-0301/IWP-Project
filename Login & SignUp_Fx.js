@@ -29,7 +29,7 @@ document.getElementsByName('login')[0].addEventListener('submit', function(e) {
     if (adPassword === pwdInput) {
         alert('Hi Admin');
         setTimeout(function() {
-            window.location.href = "#"; //  admin page
+            window.location.href = "Admin.html"; //  admin page
         }, 500);
     }
     else {

@@ -111,7 +111,7 @@ body{
 .selection-6{
     top: 75px;
 }
-.selection-3 img , .selection-4 img{
+.selection-3 img , .selection-4 img , .selection-5 img{
     height: 15px;
     width: 15px;
 }
@@ -266,6 +266,16 @@ body{
 	padding: 15px;
 	border-bottom: 2px solid #cdcdcd;
 }
+.widget-content-add-item-pants {
+    height: 1200px;
+	padding: 15px;
+	border-bottom: 2px solid #cdcdcd;
+}
+.widget-content-new-item{
+    height: 1330px;
+	padding: 15px;
+	border-bottom: 2px solid #cdcdcd;
+}
 .nopadding {
 	padding: 0;
 }
@@ -280,9 +290,19 @@ body{
     font-weight: bold;
 }
 .controls {
+    width: 222px;
 	margin-left: 200px;
     margin-top: -33px;
 	padding: 10px 0;
+}
+.controls-1{
+    font-size: 18px;
+    font-weight: bold;
+}
+.controls select{
+    padding: 2px 2px;
+    font-size: 18px;
+    font-weight: bold;
 }
 .control-s {
 	padding: 10px 0;
@@ -588,6 +608,9 @@ body{
 .item-details{
     margin-bottom: 16px;
     color: #fff;
+}
+.item-details table{
+    width: 250px;
 }
 .item-details a{
     text-decoration: none;
