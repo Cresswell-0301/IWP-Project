@@ -8,50 +8,56 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="Shop_Style.css">
+
 </head>
 <body>
-    <div class="container">
-        <div class="nav-bar">
-            <button onclick="window.location.href = 'After_login.html';" type="button">
+    <header class="header left-logo mid-fx right-icons">
+        <div class="left-logo">
+            <button onclick="window.location.href = 'index.html';" type="button">
                 <h1 class="title">
-                    <img src="image\Logo.jpg" height="150px">
+                    <img src="image\Logo.jpg" alt="Logo Error" height="150px">
                 </h1>
             </button>
+        </div>
                 
-            <u1 class="menu">
-                <button onclick="window.location.href = 'After_login.html';" type="button">
-                    <li><a>HOME</a></li>
-                </button>
+        <div class="mid-fx">
+            <button onclick="window.location.href = 'After_login.html';" type="button">
+                <a>HOME</a>
+            </button>
 
-                <button onclick="window.location.href = 'Contact.html';" type="button">
-                    <li><a>CONTACTS</a></li>
-                </button>
+            <button onclick="window.location.href = 'Contact.html';" type="button">
+                <a>CONTACTS</a>
+            </button>
 
-                <button onclick="window.location.href = 'About.html';" type="button">
-                    <li><a>ABOUTS</a></li>
-                </button>
-
-                <button onclick="window.location.href = 'Shoping_Cart.html';" type="button" title="Shopping Cart">
-                    <i class="fa fa-shopping-cart" style="font-size: 30px ; color: red"></i>
-                </button>
-                
-                <span class="dropdown">
-                    <button type="button" class="menu">
-                        <li><img src="image/User_Logo.jpg" width="40px" height="35px"/></li>
-                    </button>
-
-                    <div class="dropdown-content">
-                        <a href="#">My Account</a>
-                        <a href="#">Setting</a>
-                        <a href="index.html">Log Out</a>
-                    </div>
-                </span>
-            </u1>
+            <button onclick="window.location.href = 'About.html';" type="button">
+                <a>ABOUTS</a>
+            </button>
         </div>
 
+        <div class="right-icons">
+            <button onclick="window.location.href = 'Shoping_Cart.html';" type="button" title="Shopping Cart">
+                    <i class="fa fa-shopping-cart" style="font-size: 30px ; color: red"></i>
+            </button>
 
-        <!--Left Side Bar-->
+            <!-- 有问题 过后fix
+            <span class="dropdown">
+                <button type="button" class="menu">
+                    <img src="image/User_Logo.jpg" width="40px" height="35px"/>
+                </button>
+
+                <div class="dropdown-content">
+                    <a href="#">My Account</a>
+                    <a href="#">Setting</a>
+                    <a href="index.html">Log Out</a>
+                </div>
+            </span>-->
+        </div>
+    </header>
+
+    <div class="content">
         <div class="container1">
+
+            <!--Left Side Bar-->
             <div class="left-sidebar">
                 <div class="menu-bar">
                     <ul class="menu-links">
@@ -91,7 +97,6 @@
             <!--Start Items Section-->
             <div class="main-bar">
                 <div class="product">
-                    
                     <div class="row-product">
 
                         <div class="item-box">
@@ -209,7 +214,12 @@
                             </div>
                         </div>
 
-                                
+                    </div>  <!--End Row-->
+
+                    <br><br>
+
+                    <div class="row-product">
+
                         <div class="item-box">
                             <div class="item-image">
                                 <img src="image\bs4.jpg">
@@ -237,13 +247,7 @@
                                 </table>
                             </div>
                         </div>
-        
-                    </div>  <!--End Row-->
 
-                    <br><br>    <!--Next Row-->
-                    
-                    <div class="row-product">
-        
                         <div class="item-box">
                             <div class="item-image">
                                 <img src="image\bp6.jpg">
@@ -254,7 +258,7 @@
                                     <tr>
                                         <th><a href="#">Adidas Long Sports Pants<br># Black</a></th>
                                     </tr>
-
+                        
                                     <tr>
                                         <td><br></td>
                                     </tr>
@@ -329,8 +333,13 @@
                                 </table>
                             </div>
                         </div>
-                                                
-        
+
+                    </div>
+
+                    <br><br>
+
+                    <div class="row-product">
+
                         <div class="item-box">
                             <div class="item-image">
                                 <img src="image\gs7.jpg">
@@ -388,12 +397,6 @@
                             </div>
                         </div>
 
-                    </div>  <!--End Row-->
-
-                    <br><br>    <!--Next Row-->
-                    
-                    <div class="row-product">
-                        
                         <div class="item-box">
                             <div class="item-image">
                                 <img src="image\gs11.jpg">
@@ -450,8 +453,13 @@
                                 </table>
                             </div>
                         </div>
-                        
-        
+
+                    </div>
+
+                    <br><br>
+
+                    <div class="row-product">
+
                         <div class="item-box">
                             <div class="item-image">
                                 <img src="image\gs14.jpg">
@@ -538,14 +546,75 @@
                             </div>
                         </div>
 
-                    </div>  <!--End Row-->
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\gs25.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Fake Two-piece Basketball Short-sleeved T-shirt</a></th>
+                                    </tr>
+                    
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+                    
+                                    <tr>
+                                        <td class="bottom-details"><p>RM 19.99</p></td>
+                                    </tr>
+                    
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <br><br>
+
+                    <div class="row-product">
+
+                        <div class="item-box">
+                            <div class="item-image">
+                                <img src="image\bs24.jpg">
+                            </div>
+                            <div class="item-details">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th><a href="#">Oversized Men T-shirt Cotton<br># Red</a></th>
+                                    </tr>
+                    
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+                    
+                                    <tr>
+                                        <td class="bottom-details"><p>RN 21.99</p></td>
+                                    </tr>
+                    
+                                    <tr>
+                                        <td class="bottom-details">
+                                            <a href="#">Buy</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
 
                 </div>
             </div>
         </div>
         <!--End Itmes Section-->
 
-        <br><br>
         <div class="page-break">
             <a1>< &nbsp; </a1>
             <a href="Shop.html">1</a>
@@ -555,7 +624,55 @@
             <a href="Shop_Pg3.html" style="color:red;">3</a>
             <a1> &nbsp; ></a1>
         </div>
-        <br><br>
     </div>
+    <footer>
+        <div class="footer_main_inner">
+            <ul class="footer_left_menu"><!--row-->
+                <li class="menu_item"><!--col-->
+                    <div class="title">About Us</div>
+                    <div class="wrapper">
+                        <a href="About us.html" class="item">About us</a>
+                        <a href="Contact us.html" class="item">Contact us</a>
+                        <a href="T&C.html" class="item">Terms and Conditions</a>
+                        <a href="Policy.html" class="item">Privacy Policy</a>
+                    </div>
+                </li>
+    
+                <li class="menu_item">
+                    <div class="title">Customer Care</div>
+                    <div class="wrapper">
+                        <a href="Footer-payment.html" class="item">Payment</a>
+                        <a href="Footer-Shipping.html" class="item">Shipping</a>
+                        <a href="Footer-Return.html" class="item">Return & Exchange</a>
+                        <a href="Footer-Other.html" class="item">OTHERS</a>
+                    </div>
+                </li>
+    
+                <li class="menu_item">
+                    <div class="title">Find Us</div>
+                    <div class="wrapper"><!--这个部分不需要href 直接普通文体就好-->
+                        <p>Monday - Friday</p>
+                        <p>OPEN 09:00-12:00 / 13:00-18:00</p>
+                        <a href="mailto:p_iwp@outlook.com">service@herme3.co</a>
+                    
+                    </div>
+                    <div class="icon">
+                            <ul>
+                                <li><a href="https://www.facebook.com/profile.php?id=100092429389162">
+                                    <img src="image/facebook.png" alt="fb-icon-error" width="17px" height="17px"></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="image/instagram.png" alt="ig-icon-error"></a>
+                                </li>
+
+                            </ul>
+                    </div>
+                </li>
+            </ul>
+            <div class="footer_right_menu"><!--这个part目前打算将lab6 第二题 直接加进去-->
+    
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
