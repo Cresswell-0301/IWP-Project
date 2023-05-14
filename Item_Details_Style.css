@@ -195,6 +195,8 @@ footer{
     margin-right: auto;
     margin-top: 45px;
     margin-bottom: auto;
+    height: 550px;
+    width: 550px;
     border-radius: 20px;
 }
 .right {

@@ -13,5 +13,5 @@ function selectSize(size) {
 //  Add Cart
 function addCart(){
   alert('An item has been added to your cart !');
-  window.location.href = 'Item_Details.html';
+  
 }
