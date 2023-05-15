@@ -25,7 +25,7 @@ document.getElementsByName('login')[0].addEventListener('submit', function(e) {
 
     const ademail = document.getElementById('signInEmail').value;
     const pwdInput = document.getElementById('signInPswd').value;
-    const adEmail = "admin@gmail.com";
+    const adEmail = "admin@herme3.com";
     const adPassword = "123456789";
 
     if (adPassword == pwdInput && adEmail == ademail) {

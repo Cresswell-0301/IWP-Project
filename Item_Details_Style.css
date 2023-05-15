@@ -130,7 +130,7 @@ footer{
   display: flex;
   flex-direction: row;
   cursor: pointer;
-  padding: 0;
+  padding: 8px 0px 0px;
   margin: 0;
 }
 .icon ul li{
@@ -139,8 +139,7 @@ footer{
 .content{
     width: 100%;
     margin: 0;
-    background-color: rgb(253, 229, 200);
-
+    background-color: rgb(232, 213, 192);
     padding-bottom: 51px; /*这个可根据content的内容可改！！！！！！！*/
 }
 .dropdown-content {
