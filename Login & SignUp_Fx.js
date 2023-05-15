@@ -23,10 +23,12 @@ document.getElementById("defaultOpen").click();
 document.getElementsByName('login')[0].addEventListener('submit', function(e) {
     e.preventDefault(); // prevent form submission
 
+    const ademail = document.getElementById('signInEmail').value;
     const pwdInput = document.getElementById('signInPswd').value;
+    const adEmail = "admin@gmail.com";
     const adPassword = "123456789";
 
-    if (adPassword === pwdInput) {
+    if (adPassword == pwdInput && adEmail == ademail) {
         alert('Hi Admin');
         setTimeout(function() {
             window.location.href = "Admin.html"; //  admin page
