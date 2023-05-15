@@ -26,14 +26,13 @@ myForm.addEventListener('submit', (event) => {
 	  	alert('Pls provide the details');
 	} else {
 		alert('Payment Successful');
-		//	myForm.submit()	
 		redirect();
 	}
 });
 
 function redirect() {
 	setTimeout(function() {
-		window.location.href = "After_login.html";
+		window.location.href = "index.html";
 	}, 500); //	1000 = 1 second
 }
 //	end	//

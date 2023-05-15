@@ -35,7 +35,7 @@ document.getElementsByName('login')[0].addEventListener('submit', function(e) {
     else {
         alert('Login Successful');
         setTimeout(function() {
-            window.location.href = "After_login.html";
+            window.location.href = "Shop.html";
         }, 500);
     }
 });

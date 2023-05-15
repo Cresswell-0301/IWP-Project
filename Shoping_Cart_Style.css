@@ -1,31 +1,65 @@
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    height: 100vh;
-    background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
-.container{
-    height: auto;
-    width: auto;
-    background-size: cover;
-    background-position: center;
-    font-family:Arial, Helvetica, sans-serif ;
-    background-image: url('image/background.jpg');
-}
-.nav-bar{
+header{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-    padding: 30px 80px;
-    padding-bottom: 5px;
-    padding-top: 5px;
+    padding: 0 80px;
+    background-color: Bisque;
+    flex: 1;
 }
-.nav-bar button{
+.header button{
     background: none;
     border: none;
+}
+.left-logo{
+    display: flex;
+    flex-grow: 1;
+}
+.mid-fx{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 2;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.mid-fx a{
+    list-style: none;
+    display: inline-block;
+    margin: 30px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 27px;
+    font-weight: 600;
+    margin-left: 25px;
+    transition: .5s ease;
+    background-size: 0 2px;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+.mid-fx a:hover{
+    color: RGB(247,241,234);
+    padding: 5px 10px;
+    border: none;
+    background-size: 100% 2px;
+    background-position: left bottom;
+}
+.right-icons{
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
 }
 .menu li{
     list-style: none;
@@ -66,7 +100,7 @@ body{
     width: 100%;
     height: 100%;
     box-shadow: 0px 25px 40px #1687d933;
-    background-image: url('image/background.jpg');
+    background-color: rgb(246, 234, 219);
 }
 .headd{
     margin: auto;
@@ -79,7 +113,7 @@ body{
     font-size: 25px;
     font-family: sans-serif ;
     font-weight: 700;
-    color: #E3F0FF;
+    color: #4b4c4c;
     position: absolute;
     padding-top: 10px;
     left: 20px;
@@ -190,7 +224,7 @@ body{
     font-size: 32px;
     font-family: sans-serif;
     font-weight: 800;
-    color: #E3F0FF;
+    color: #4b4c4c;
 }
 
 /* Price */
@@ -201,7 +235,7 @@ body{
     font-size: 28px;
     font-family: sans-serif;
     font-weight: 600;
-    color: #fff;
+    color: #4b4c4c;
 }
 .about select{
     margin-top: 50px;
@@ -229,28 +263,28 @@ body{
     font-size: 20px;
     font-weight: bold;
     margin: 0 16px;
-    color: white;
+    color: 4b4c4c;
 }
 
 /* Total Price */
-footer{
-    position: fixed;
-    background-image: url('image/background.jpg');
-
-    border-top: 1px solid #E3F0FF;
+.bottom{
     bottom: 10px;
     width: 150%;
-
     text-align: left;
     padding-right: 250px;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
-footer table{   
+.bottom hr{
+    border-color: rgb(198, 197, 197);
+}
+.bottom table{   
     font-size: 28px;
     font-weight: 800;
     padding-left: 30px;
-    color: #E3F0FF;
+    color: #4b4c4c;
 }
-footer button{
+.bottom button{
     height: 40px;
     color: #fff;
     background: crimson;
@@ -262,6 +296,113 @@ footer button{
     cursor: pointer;
     margin-left: 1300px;
 }
-footer button:hover{
+.bottom button:hover{
     font-size: 28px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border-radius: 30px;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 20px;
+} 
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+    border-radius: 30px;
+    color: rgb(75, 75, 75);
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+footer{
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  background-color: bisque;
+  color: black;
+  padding: auto;
+  
+}
+.footer_left_menu{
+  width: 65%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.menu_item{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  flex-basis: 25%;
+  padding: 2px 0;
+  display: flex;
+  flex-direction: column;
+}
+.footer_left_menu ul li{
+  list-style: none;
+  margin-bottom: 12px;
+}
+.footer_left_menu ul li a{
+  text-decoration: none;
+}
+.title{
+  font-weight: bold;
+  width: fit-content;
+  margin-bottom: 30px;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+}
+.wrapper a{
+  flex-direction: column;
+  text-decoration: none;
+  padding-bottom: 5px;
+  color: black;
+  transition: .5s ease;
+  background-size: 0 2px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+.wrapper a:hover{
+  color: red;
+  padding: 5px 10px;
+  border: none;
+  background-size: 100% 2px;
+  background-position: left bottom;
+}
+.icon ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+.icon ul li{
+  margin-right: 20px;
+}
+.content{
+    width: 100%;
+    margin: 0;
+    padding-bottom: 51px; /*这个可根据content的内容可改！！！！！！！*/
 }

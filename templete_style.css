@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 80px;
+    background-color: Bisque;
+    flex: 1;
+}
+.header button{
+    background: none;
+    border: none;
+}
+.left-logo{
+    display: flex;
+    flex-grow: 1;
+}
+.mid-fx{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 2;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.mid-fx a{
+    list-style: none;
+    display: inline-block;
+    margin: 30px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 27px;
+    font-weight: 600;
+    margin-left: 25px;
+    transition: .5s ease;
+    background-size: 0 2px;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+.mid-fx a:hover{
+    color: RGB(247,241,234);
+    padding: 5px 10px;
+    border: none;
+    background-size: 100% 2px;
+    background-position: left bottom;
+}
+.right-icons{
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+footer{
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  background-color: bisque;
+  color: black;
+  padding: auto;
+  
+}
+.footer_left_menu{
+  width: 65%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.menu_item{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  flex-basis: 25%;
+  padding: 2px 0;
+  display: flex;
+  flex-direction: column;
+}
+.footer_left_menu ul li{
+  list-style: none;
+  margin-bottom: 12px;
+}
+.footer_left_menu ul li a{
+  text-decoration: none;
+}
+.title{
+  font-weight: bold;
+  width: fit-content;
+  margin-bottom: 30px;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+}
+.wrapper a{
+  flex-direction: column;
+  text-decoration: none;
+  padding-bottom: 5px;
+  color: black;
+  transition: .5s ease;
+  background-size: 0 2px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+.wrapper a:hover{
+  color: red;
+  padding: 5px 10px;
+  border: none;
+  background-size: 100% 2px;
+  background-position: left bottom;
+}
+.icon ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+.icon ul li{
+  margin-right: 20px;
+}
+.content{
+    width: 100%;
+    margin: 0;
+    padding-bottom: 51px; /*这个可根据content的内容可改！！！！！！！*/
+}

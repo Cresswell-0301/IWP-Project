@@ -10,135 +10,151 @@
     <link rel="stylesheet" href="index_style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="nav-bar">
-            
-            <video autoplay loop muted class="back-video">
-                <source src="image/background-video.mp4" type="video/mp4">
-            </video>
-
+    <header class="header left-logo mid-fx right-icons">
+        <div class="left-logo">
             <button onclick="window.location.href = 'index.html';" type="button">
                 <h1 class="title">
                     <img src="image\Logo.jpg" alt="Logo Error" height="150px">
                 </h1>
             </button>
-            <u1 class="menu">
-                <button onclick="window.location.href = 'Shop.html';" type="button" id="login-access">
-                    <li><a>OVERVIEW</a></li>
-                </button>
-
-                <button type="button">
-                    <li><a href="#contact">CONTACTS</a></li>
-                </button>
-
-                <button type="button">
-                    <li><a href="#about">ABOUTS</a></li>
-                </button>
-
-                <button onclick="window.location.href = 'Login & SignUp.html'" type="button">
-                    <li><img src="image/User_Logo.jpg" width="40px" height="35px"/></li>
-                </button>
-            </u1>
         </div>
+
+        <div class="mid-fx">
+            <button onclick="window.location.href = 'Shop.html';" type="button" id="login-access">
+                <a>OVERVIEW</a>
+            </button>
+
+            <button type="button">
+                <a href="6-6.html">6.6 Festival</a>
+            </button>
+
+            <button type="button">
+                <a href="6-1.html">6.1</a>
+            </button>
+        </div>
+        <div class="right-icons">
+            <div class="dropdown">
+                <button type="button" class="menu">
+                    <img src="image/User_Logo.jpg" width="40px" height="35px"/>
+                </button>
+
+                <div class="dropdown-content">
+                    <a href="Login & SignUp.html">Login In</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+         <div class="mySlides fade" style="display: block;">
+            <div class="numbertext">1 / 4</div>
+             <video autoplay loop muted style="width: 100%;">
+            <source src="image/background-video.mp4" type="video/mp4"></video>
+            <div class="text-block">
+                <h1><span class="main_title">Fashion</span></h1>
+                <p>is to follow the <span class="sub_title">Trend</span></p><br><br><br>
+
+                <h1><span class="main_title">Style</span></h1>
+                <p>is to be <span class="sub_title">yourself</span></p>
+            </div>
+        </div>
+        <div class="mySlides fade" >
+        <div class="numbertext">2 / 4</div>
+       <img src="image/dress-2583113.jpg" style="width:100%" >
+       <div class="text-block2">
+        <h1><span class="main_title">Personality</span></h1>
+        <p>style of the model, even more of your<span class="sub_title">demeanor!</span></p><br><br><br>
+    </div>
+
+     </div>
+  
+     <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="image/hangers-1850082.jpg" style="width:100%">
+      <div class="text-block">
+        <p><span class="sub_title">light, soft, generous style,</span></p>
+        <p>show your</p>
+        <h1><span class="main_title">Personal Style!</span></h1>
+        <br><br><br></div>
+      </div>
+  
+     <div class="mySlides fade">
+      <div class="numbertext">4 / 4</div>
+      <img src="image/store-906722.jpg" style="width:100%">
+      <div class="text-block">
+        <p>carry forward the<span class="sub_title">men's boutique, </span></p><p>a show </p>
         
-        <div class="home">
-            <h1 class="title-1">Fashion is to follow the <span>Trend</span><br><span>Style</span> is to be yourself</h1>
-            <p>You can have anything you want in life if you dress for it.</p>
-        </div>
-
+        <h1><span class="main_title">Man Style!</span></h1>
+        <br><br><br>
     </div>
-
-
-     <!--    Contact   -->
-    <div class="container-1" id="contact">
-        <div class="home-1">
-            <h1 class="title-2">Contact Info</h1>
-            <table>
-                <tr>
-                    <td>
-                        <img src="data:image/png;base64,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"
-                        alt="Image Error" height="20px">
-                    </td>
-                    <td><a1>Monday - Friday</1></td>
-                    <td><b>9.00 am - 5.00 pm</b></td>
-                </tr>
-
-                <tr>
-                    <td rowspan="2"></td>
-                    <td><a1>Saturday</a1></td>
-                    <td><b>9.00 am - 4.30 pm</b></td>
-                </tr>
-
-                <tr>
-                    <td><a1>Sunday</a1></td>
-                    <td style="text-align: center;"><b>Closed</b></td>
-                </tr>
-            </table>
-            
-            <br><br>
-
-            <p>
-                <button1 onclick="window.location.href = 'mailto: 1211206094@student.mmu.edu.my';" type="button">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwzoHy_7bNUAL5Ha2ShUNgBZeDZ_He4Iy4Jw&usqp=CAU"
-                    alt="Image Error" height="20px">
-                </button1>
-
-                <a href="mailto: connect@mmu.edu.my"
-                style="text-decoration: none; color: #fff; font-size: 20px;">
-                connect@mmu.edu.my
-                </a>
-            </p>
-
-            <br><br>
-
-            <p>
-                <button1 onclick="window.location.href = 'tel:601111379833';" type="button">
-                    <img src="data:image/png;base64,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"
-                    alt="Image Error" height="20px">
-                </button1>
-
-                <a href="tel: 1-300-80-0668" style="text-decoration: none; color: #fff; font-size: 20px;">
-                    1-300-80-0668
-                </a>
-            </p>
-
-            <br><br>
-
-            <p>
-                <button1 onclick="window.location.href = 'https://www.google.com/maps/place/Multimedia+University+-+MMU+Cyberjaya/@2.9259631,101.6429994,16.84z/data=!4m6!3m5!1s0x31cdb6e4a9d3b7a1:0xd0f74e8ad10f1129!8m2!3d2.9277715!4d101.6419004!16zL20vMDN5MjJw';"
-                type="button">
-                    <img src="https://th.bing.com/th?id=OIP.EBVAV8IIvDS9R17i7ZwwcAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
-                    alt="Image Error" height="20px">
-                </button1>
-
-                <a href="https://www.google.com/maps/place/Multimedia+University+-+MMU+Cyberjaya/@2.9259631,101.6429994,16.84z/data=!4m6!3m5!1s0x31cdb6e4a9d3b7a1:0xd0f74e8ad10f1129!8m2!3d2.9277715!4d101.6419004!16zL20vMDN5MjJw"
-                style="text-decoration: none; color: white; font-size: 20px;">
-                    Multimedia University - MMU Cyberjaya Persiaran Multimedia, 63100 Cyberjaya, Selangor</a>
-            </p>
-            
-            <br><br>
-            
-            <p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3707.053440736502!2d101.64170723518744!3d2.92739578018771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdb6e4a9d3b7a1%3A0xd0f74e8ad10f1129!2sMultimedia%20University%20-%20MMU%20Cyberjaya!5e0!3m2!1sen!2smy!4v1680091908991!5m2!1sen!2smy"
-                width="550" height="265" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-
-                <button2 onclick="window.location.href = 'Contact_Form.html'" type="button" id="loginn-access">
-                    Need Help
-                </button2>
-            </p>
-
-        </div>
-    </div>
-
-
-    <!--    About   -->
-    <div class="container-1" id="about">
-        <div class="home-1">
+      </div>
         
-        </div>
-    </div>
+     
+        <div class="indicator"><!--style="text-align:center"-->
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div><!-- The dots/circles -->
 
+  
+        <!-- Next and previous buttons -->
+     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+     <a class="next" onclick="plusSlides(1)">&#10095;</a>
+     <br>
+    </div>
+    
+    <footer>
+        <div class="footer_main_inner">
+            <ul class="footer_left_menu"><!--row-->
+                <li class="menu_item"><!--col-->
+                    <div class="title">About Us</div>
+                        <div class="wrapper">
+                            <a href="About us.html" class="item">About us</a>
+                            <a href="Contact us.html" class="item">Contact us</a>
+                            <a href="T&C.html" class="item">Terms and Conditions</a>
+                            <a href="Policy.html" class="item">Privacy Policy</a><br>
+                    </div>
+                </li>
+
+                <li class="menu_item">
+                    <div class="title">Customer Care</div>
+                    <div class="wrapper">
+                        <a href="#" class="item">Payment</a>
+                        <a href="#" class="item">Shipping</a>
+                        <a href="pdf/RETURN FORM.pdf" class="item">Return & Exchange</a>
+                        <a href="#" class="item">Be Our VIP</a>
+                        <a href="#" class="item">OTHERS</a>
+                    </div>
+                </li>
+
+                <li class="menu_item">
+                    <div class="title">Find Us</div>
+                    <div class="wrapper"><!--这个部分不需要href 直接普通文体就好-->
+                        <p>Monday - Friday</p>
+                        <p>OPEN 09:00-12:00 / 13:00-18:00</p>
+                        <a href="mailto:p_iwp@outlook.com">service@herme3.co</a>
+                    
+                    </div>
+                    <div class="icon">
+                            <ul>
+                                <li><a href="https://www.facebook.com/profile.php?id=100092429389162">
+                                    <img src="image/facebook.png" alt="fb-icon-error" width="17px" height="17px"></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="image/instagram.png" alt="ig-icon-error"></a>
+                                </li>
+
+                            </ul>
+                    </div>
+                </li>
+            </ul>
+            <div class="footer_right_menu"><!--这个part目前打算将lab6 第二题 直接加进去-->
+
+            </div>
+        </div>
+    </footer>
 
     <script src="index_fx.js"></script>
 </body>
