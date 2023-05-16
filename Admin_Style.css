@@ -47,6 +47,7 @@ body{
 }
 .selection{
     position: relative;
+    margin-top: -30px;
     width: 189px;
     height: 65px;
     left: 0px;
@@ -70,10 +71,12 @@ body{
     height: 90px;
     border-radius: 10px;
 }
-.selection-1 , .selection-2 , .selection-3 , .selection-4 , .selection-5 , .selection-6{
+.selection-1 , .selection-2 , .selection-3 ,
+.selection-4 , .selection-5 , .selection-6 , 
+.selection-7 , .selection-8 , .selection-9 {
     position: relative;
     width: 189px;
-    height: 65px;
+    height: 58px;
     left: 0px;
     border-top: 1px solid gray;
     border-radius: 20px;
@@ -82,11 +85,14 @@ body{
     align-items: center;
 }
 .selection-1:hover , .selection-2:hover , .selection-3:hover ,
-.selection-4:hover , .selection-5:hover , .selection-6:hover{
+.selection-4:hover , .selection-5:hover , .selection-6:hover ,
+.selection-7:hover , .selection-8:hover , .selection-9:hover{
     background-color: rgb(207, 206, 206);
 }
+
 .selection-1 h3 , .selection-2 h3 , .selection-3 h3 , 
-.selection-4 h3 , .selection-5 h3 , .selection-6 h3{
+.selection-4 h3 , .selection-5 h3 , .selection-6 h3 ,
+.selection-7 h3 , .selection-8 h3 , .selection-9 h3{
     font-size: 16.5px ;
     display: inline;
 }
@@ -111,6 +117,15 @@ body{
 .selection-6{
     top: 75px;
 }
+.selection-7{
+    top: 76px;
+}
+.selection-8{
+    top: 77px;
+}
+.selection-9{
+    top: 78px;
+}
 .selection-3 img , .selection-4 img , .selection-5 img{
     height: 15px;
     width: 15px;
@@ -125,7 +140,6 @@ body{
     padding-left: var(--sidebar-size);
     margin-top: 20px;
     margin-left: 15%;
-    display: none;
 }
 .switchlink.active {
     background-color: #ccc;
