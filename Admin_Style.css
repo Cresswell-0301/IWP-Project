@@ -566,6 +566,20 @@ body{
 .payment-refund .dot {
     background-color: #ff4242;
 }
+.prt{
+    float: right;
+    padding: 0px 35px;
+}
+.prt button{
+    border-radius: 10px;
+    padding: 10px 25px;
+    font-weight: bold;
+    border: 1px solid black;
+}
+.prt button:hover{
+    color: white;
+    background-color: #666;
+}
 
 /*  View Item   */
 .main-bar{

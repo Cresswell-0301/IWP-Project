@@ -1,6 +1,11 @@
 // show default form
 document.getElementById("defaultOpen").click();
 
+//  Print Fx
+function printPage() {
+      window.print();
+}
+
 // function to open form based on formName
 function openForm(evt, formName) {
     var i, switchcontent, switchlinks;
