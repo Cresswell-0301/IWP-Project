@@ -71,6 +71,18 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 
+// Hide Member
+//  Hide Staff
+function hideMember(memberID) {
+    var memberElement = document.getElementById(memberID);
+    var memberAns = confirm('Confirm Delete ?');
+
+    if(memberAns == true){
+        memberElement.style.display = "none";
+        alert('Successfully Deleted');
+    }
+}
+
 //  Hide Staff
 function hideStaff(staffID) {
     var staffElement = document.getElementById(staffID);

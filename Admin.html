@@ -3189,77 +3189,105 @@
                         <div class="box">
                             <div class="box-header">Member List</div>
                             <div class="box-body overflow-scroll">
-                                <table>
+                                <table class="mmb">
                                     <tr> 
-                                        <th></th>
                                         <th>User Name</th>
                                         <th>User ID</th>
                                         <th>Phone Number</th>
                                         <th>Postcode</th>
                                         <th>Address</th>
+                                        <th></th>
                                     </tr>
 
-                                    <tr> 
-                                        <td><span class="material-icons-sharp">face</span></td>
+                                    <tr id="member-1"> 
                                         <td>Mike Tyson</td>
                                         <td>1201208596</td>
                                         <td>013-9677551</td>
                                         <td>53000</td>
                                         <td>70A,288 Residensi,53000,Kuala Lumpur,Wilayah Persekutuan</td>
-                                    </tr>   
+                                        <td>
+                                            <button onclick="hideMember('member-1')">Delete</button>
+                                            <br><br>
+                                            <button onclick="window.location.href = 'Admin_Member_Edit.html'">Edit</button>
+                                        </td>
+                                    </tr>
 
-                                    <tr> 
-                                        <td><span class="material-icons-sharp">face</span></td>
+                                    <tr id="member-2"> 
                                         <td>Chin Sam Ye</td>
                                         <td>1201201935</td>
                                         <td>013-9677551</td>
                                         <td>28700</td>
                                         <td>78A,288 Residensi,28700,Bentong,Wilayah Persekutuan</td>
+                                        <td>
+                                            <button onclick="hideMember('member-1')">Delete</button>
+                                            <br><br>
+                                            <button onclick="window.location.href = 'Admin_Member_Edit.html'">Edit</button>
+                                        </td>
                                     </tr>
 
-                                    <tr> 
-                                        <td><span class="material-icons-sharp">face</span></td>
+                                    <tr id="member-3"> 
                                         <td>Sim Boon Xun</td>
                                         <td>1211206861</td>
                                         <td>018-33672910</td>
                                         <td>53200</td>
                                         <td>8B,The Arc,53000,Cyberjaya,Selangor</td>
+                                        <td>
+                                            <button onclick="hideMember('member-1')">Delete</button>
+                                            <br><br>
+                                            <button onclick="window.location.href = 'Admin_Member_Edit.html'">Edit</button>
+                                        </td>
                                     </tr>
 
-                                    <tr> 
-                                        <td><span class="material-icons-sharp">face</span></td>
+                                    <tr id="member-4"> 
                                         <td>Lew Kien Yew</td>
                                         <td>1211206094</td>
                                         <td>012-23511341</td>
                                         <td>53000</td>
                                         <td>No.88,Taman MMU Height,53200,Cyberjaya, Selangor</td>
+                                        <td>
+                                            <button onclick="hideMember('member-1')">Delete</button>
+                                            <br><br>
+                                            <button onclick="window.location.href = 'Admin_Member_Edit.html'">Edit</button>
+                                        </td>
                                     </tr>
 
-                                    <tr> 
-                                        <td><span class="material-icons-sharp">face</span></td>
+                                    <tr id="member-5"> 
                                         <td>Siti Zulaikha</td>
                                         <td>1201209083</td>
                                         <td>012-63829011</td>
                                         <td>53000</td>
                                         <td>No.99,Taman Klang Height,53000,Klang,Wilayah Persekutuan</td>
+                                        <td>
+                                            <button onclick="hideMember('member-1')">Delete</button>
+                                            <br><br>
+                                            <button onclick="window.location.href = 'Admin_Member_Edit.html'">Edit</button>
+                                        </td>
                                     </tr>
 
-                                    <tr> 
-                                        <td><span class="material-icons-sharp">face</span></td>
+                                    <tr id="member-6"> 
                                         <td>Christina Chin</td>
                                         <td>1201208835</td>
                                         <td>017-022628291</td>
                                         <td>53081</td>
                                         <td>PL2-0211,Taman Gemilang,53081,Kuala Lumpur,Wilayah Persekutuan</td>
+                                        <td>
+                                            <button onclick="hideMember('member-1')">Delete</button>
+                                            <br><br>
+                                            <button onclick="window.location.href = 'Admin_Member_Edit.html'">Edit</button>
+                                        </td>
                                     </tr>
 
-                                    <tr> 
-                                        <td><span class="material-icons-sharp">face</span></td>
+                                    <tr id="member-7"> 
                                         <td>Koko Milo</td>
                                         <td>12112089225</td>
                                         <td>017-927261231</td>
                                         <td>52081</td>
                                         <td>Mo.133,Taman Taktau,52081,Kuala Lumpur,Wilayah Persekutuan</td>
+                                        <td>
+                                            <button onclick="hideMember('member-1')">Delete</button>
+                                            <br><br>
+                                            <button onclick="window.location.href = 'Admin_Member_Edit.html'">Edit</button>
+                                        </td>
                                     </tr>
                                        
                                 </table>

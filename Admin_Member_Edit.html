@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Edit</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Admin_Style.css">
+
+    <style>
+        .upload-icon{
+            margin-left: -200px;
+        }
+        .form-actions button a{
+            color: black;
+            padding: 8px 5px;
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+
+        <div id="edit-profile-member">
+            
+            <div class="widget-box">
+                <div class="widget-title h5-item">
+                    <h5>Edit Personal Info</h5>
+                </div>
+                <div class="widget-content nopadding">
+                    <form action="#" method="post" class="form-horizontal">
+    
+                        <div class="control-group">
+                            <label class="control-label">Profile Photo</label>
+                            <div class="controls">
+                                <div class="photo" id="imgBox">
+                                    <input type="file" class="span12" id="file" onchange="loadFile(event)"/>
+                                    <label for="file"><img src="image/upload_icon.jpg" alt="Upload" class="upload-icon" title="Upload Photo"></label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label">First Name</label>
+                            <div class="controls">
+                                <input type="text" class="span11" placeholder=" First name" />
+                            </div>
+                        </div>
+    
+                        <div class="control-group">
+                            <label class="control-label">Last Name</label>
+                            <div class="controls">
+                                <input type="text" class="span11" placeholder=" Last name" />
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label">Birthday</label>
+                            <div class="controls">
+                                <input type="date" class="span11" placeholder=" Birthday" />
+                            </div>
+                        </div>
+    
+                        <div class="control-group">
+                            <label class="control-label">Phone Number</label>
+                            <div class="controls">
+                                <input type="tel" class="span11" placeholder=" Phone Number"/>
+                                <br>
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label">Password</label>
+                            <div class="controls">
+                                <input type="password"  class="span11" placeholder=" Enter Password"  />
+                            </div>
+                        </div>
+    
+                        <div class="form-actions">
+                            <button type="reset" class="btn">Clear</button>
+                            <button type="submit" class="btn"><a href="Admin.html">Save</a></button>
+                        </div>
+                    </form>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Admin_Member_Edit_Fx.js"></script>
+</body>
+</html>
