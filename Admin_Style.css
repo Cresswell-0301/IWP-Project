@@ -126,7 +126,9 @@ body{
 .selection-9{
     top: 78px;
 }
-.selection-3 img , .selection-4 img , .selection-5 img{
+
+.selection-2 img , .selection-3 img , .selection-5 img ,
+.selection-6 img , .selection-7 img , .selection-8 img{
     height: 15px;
     width: 15px;
 }
@@ -537,9 +539,9 @@ body{
     color: #2a59d1;
     background-color: rgba(62, 121, 247, 0.1);
 }
-.order-ready {
-    color: #2a59d1;
-    background-color: rgba(62, 121, 247, 0.1);
+.order-return {
+    color: red;
+    background-color: rgba(247, 62, 62, 0.1);
 }
 .order-shipped {
     color: #00ab6f;
@@ -561,7 +563,9 @@ body{
 .payment-pending .dot {
     background-color: #ffc542;
 }
-
+.payment-refund .dot {
+    background-color: #ff4242;
+}
 
 /*  View Item   */
 .main-bar{
@@ -679,3 +683,72 @@ body{
 .page-break a:hover{
     font-size: x-large;
 }
+
+
+/* Member */
+.member table
+{
+	background:#fff;
+	width:113%;
+	height:43.5%;
+	border-radius:2rem;
+	padding:1.8rem;
+	text-align:center;
+	transition:all 300ms ease;
+}
+
+#customer-list {
+  max-width: 800px;
+  margin: 0 auto;
+
+}
+
+.customer-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.customer-item:hover {
+  background-color: #f9f9f9;
+}
+
+.order-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.order-item .order-info {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.order-item .order-date {
+  color: #666;
+}
+
+.order-item .order-products {
+  margin-left: 20px;
+}
+
+.order-item .product {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3px;
+}
+
+.product .product-name {
+  font-weight: bold;
+}
+
+.product .product-price {
+  color: #666;
+}
+
+.hidden {
+  display: none;
+}
+
+/* selection-2 & selection-3  ,  member samye part */

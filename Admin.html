@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin</title>
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="Admin_Style.css">
 </head>
@@ -32,30 +33,48 @@
             </div>
 
             <div class="selection-2">
+				<button onclick="openForm(event,'member') , topFunction()">
+						<h3><img src="image/member_icon.jpg">Member&nbsp;List</h3>
+				</button>
+			</div>
+
+            <div class="selection-3">
+                <button onclick="openForm(event,'OrderHistory') , topFunction()">
+						<h3><img src="image/orderhistory_icon.jpg">Order&nbsp;History</h3>
+				</button>
+            </div>
+
+            <div class="selection-4">
                 <button onclick="openForm(event,'manage-staff')">
                     <h3><i class='bx bx-user-circle'></i>Our&nbsp;Staff</h3>
                 </button>
             </div>
 
-            <div class="selection-3">
+            <div class="selection-5">
                 <button onclick="window.location.href = 'Admin_New_User.html'">
                     <h3><img src="image/add_staff_icon.jpg">Add&nbsp;Staff</h3>
                 </button>
             </div>
 
-            <div class="selection-4">
+            <div class="selection-6">
                 <button onclick="openForm(event,'boyShirt') , topFunction()">
                     <h3><img src="image/view_cart_icon.jpg">View&nbsp;Items</h3>
                 </button>
             </div>
 
-            <div class="selection-5">
+            <div class="selection-7">
                 <button onclick="window.location.href = 'Admin_Add_New_Item.html'">
                     <h3><img src="image/Add_Item_Icon.jpg">Add&nbsp;Item</h3>
                 </button>
             </div>
 
-            <div class="selection-6">
+            <div class="selection-8">
+                <button onclick="openForm(event,'orderStatus') , topFunction()">
+                    <h3><img src="image/orderlist_icon.jpg">Order&nbsp;List</h3>
+                </button>
+            </div>
+
+            <div class="selection-9">
                 <button onclick="window.location.href = 'Login & SignUp.html'">
                     <h3><i class='bx bx-log-out bx-flip-horizontal'></i><br>Log Out</h3>
                 </button>
@@ -199,143 +218,7 @@
                         
                     </div>
                     <!-- END CATEGORY CHART -->
-
-                    <!-- ORDERS TABLE -->
-                    <div class="col-12">
-                        <div class="box">
-                            <div class="box-header">
-                                Recent orders
-                            </div>
-                            <div class="box-body overflow-scroll">
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th>ID</th>
-                                            <th>Customer</th>
-                                            <th>Date</th>
-                                            <th>Order status</th>
-                                            <th>Payment status</th>
-                                            <th>Total</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>#2345</td>
-                                            <td>
-                                                <div class="order-owner">
-                                                    <img src="image/payment_1.jpg" alt="user image">
-                                                    <span>tuat tran anh</span>
-                                                </div>
-                                            </td>
-                                            <td>2023-03-11</td>
-                                            <td>
-                                                <span class="order-status order-shipped">
-                                                    Shipped
-                                                </span>
-                                            </td>
-                                            <td>
-                                                <div class="payment-status payment-paid">
-                                                    <div class="dot"></div>
-                                                    <span>Paid</span>
-                                                </div>
-                                            </td>
-                                            <td>RM 123.45</td>
-                                        </tr>
-                                        <tr>
-                                            <td>#2346</td>
-                                            <td>
-                                                <div class="order-owner">
-                                                    <img src="image/payment_2.jpg" alt="user image">
-                                                    <span>John doe</span>
-                                                </div>
-                                            </td>
-                                            <td>2023-03-14</td>
-                                            <td>
-                                                <span class="order-status order-shipped">
-                                                    Shipped
-                                                </span>
-                                            </td>
-                                            <td>
-                                                <div class="payment-status payment-paid">
-                                                    <div class="dot"></div>
-                                                    <span>Paid</span>
-                                                </div>
-                                            </td>
-                                            <td>RM 123.45</td>
-                                        </tr>
-                                        <tr>
-                                            <td>#2347</td>
-                                            <td>
-                                                <div class="order-owner">
-                                                    <img src="image/payment_3.jpg" alt="user image">
-                                                    <span>evelyn</span>
-                                                </div>
-                                            </td>
-                                            <td>2023-03-25</td>
-                                            <td>
-                                                <span class="order-status order-shipped">
-                                                    Shipped
-                                                </span>
-                                            </td>
-                                            <td>
-                                                <div class="payment-status payment-paid">
-                                                    <div class="dot"></div>
-                                                    <span>Paid</span>
-                                                </div>
-                                            </td>
-                                            <td>RM 123.45</td>
-                                        </tr>
-                                        <tr>
-                                            <td>#2348</td>
-                                            <td>
-                                                <div class="order-owner">
-                                                    <img src="image/payment_4.jpg" alt="user image">
-                                                    <span>John doe</span>
-                                                </div>
-                                            </td>
-                                            <td>2023-04-22</td>
-                                            <td>
-                                                <span class="order-status order-shipped">
-                                                    Shipped
-                                                </span>
-                                            </td>
-                                            <td>
-                                                <div class="payment-status payment-paid">
-                                                    <div class="dot"></div>
-                                                    <span>Paid</span>
-                                                </div>
-                                            </td>
-                                            <td>RM 123.45</td>
-                                        </tr>
-                                        <tr>
-                                            <td>#2349</td>
-                                            <td>
-                                                <div class="order-owner">
-                                                    <img src="image/payment_5.jpg" alt="user image">
-                                                    <span>evelyn</span>
-                                                </div>
-                                            </td>
-                                            <td>2023-05-20</td>
-                                            <td>
-                                                <span class="order-status order-ready">
-                                                    Ready
-                                                </span>
-                                            </td>
-                                            <td>
-                                                <div class="payment-status payment-pending">
-                                                    <div class="dot"></div>
-                                                    <span>Pending</span>
-                                                </div>
-                                            </td>
-                                            <td>RM 123.45</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END ORDERS TABLE -->
-                </div>
+                </div>    
             </div>
         </div>
         <!--    End Main Page -->
@@ -357,8 +240,8 @@
                             </div>
 
                             <div class="staff-details">
-                                <h4>Name</h4>
-                                <p>Position</p>
+                                <h4>Lew Kien Yew</h4>
+                                <p>Director , Webmaster</p>
                             </div>
 
                             <div class="staff-btn">
@@ -373,8 +256,8 @@
                             </div>
 
                             <div class="staff-details">
-                                <h4>Name</h4>
-                                <p>Position</p>                                
+                                <h4>Sim Boon Xun</h4>
+                                <p>Director , UI Designer</p>                                
                             </div>
 
                             <div class="staff-btn">
@@ -389,8 +272,8 @@
                             </div>
 
                             <div class="staff-details">
-                                <h4>Name</h4>
-                                <p>Position</p>                                
+                                <h4>Chin Sam Ye</h4>
+                                <p>Director , Data Manager</p>                                
                             </div>
 
                             <div class="staff-btn">
@@ -405,8 +288,8 @@
                             </div>
 
                             <div class="staff-details">
-                                <h4>Name</h4>
-                                <p>Position</p>                                
+                                <h4>Siti Zulaikha</h4>
+                                <p>Director , Wardrobe Manager</p>                                
                             </div>
 
                             <div class="staff-btn">
@@ -426,8 +309,8 @@
                             </div>
 
                             <div class="staff-details">
-                                <h4>Name</h4>        
-                                <p>Position</p>                        
+                                <h4>John</h4>        
+                                <p>Admin</p>                        
                             </div>
 
                             <div class="staff-btn">
@@ -442,8 +325,8 @@
                             </div>
 
                             <div class="staff-details">
-                                <h4>Name</h4>       
-                                <p>Position</p>                         
+                                <h4>Amy</h4>       
+                                <p>Customer Service</p>                         
                             </div>
 
                             <div class="staff-btn">
@@ -458,8 +341,8 @@
                             </div>
 
                             <div class="staff-details">
-                                <h4>Name</h4>        
-                                <p>Position</p>                        
+                                <h4>Canee</h4>        
+                                <p>Accountant</p>                        
                             </div>
 
                             <div class="staff-btn">
@@ -2952,6 +2835,456 @@
         </div>
         <!--    End Girl Shirt  -->
 
+
+        <!-- Start Order List -->
+        <div id="orderStatus" class="contain">
+            <div class="main-content">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="box">
+                            <div class="box-header">
+                                Recent orders
+                            </div>
+                            <div class="box-body overflow-scroll">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Customer</th>
+                                            <th>Date</th>
+                                            <th>Order status</th>
+                                            <th>Payment status</th>
+                                            <th>Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>#2345</td>
+                                            <td>
+                                                <div class="order-owner">
+                                                    <img src="image/payment_1.jpg" alt="user image">
+                                                    <span>tuat tran anh</span>
+                                                </div>
+                                            </td>
+                                            <td>2023-03-11</td>
+                                            <td>
+                                                <span class="order-status order-shipped">
+                                                    Shipped
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="payment-status payment-paid">
+                                                    <div class="dot"></div>
+                                                    <span>Paid</span>
+                                                </div>
+                                            </td>
+                                            <td>RM 35.62</td>
+                                        </tr>
+                                        <tr>
+                                            <td>#2346</td>
+                                            <td>
+                                                <div class="order-owner">
+                                                    <img src="image/payment_2.jpg" alt="user image">
+                                                    <span>John doe</span>
+                                                </div>
+                                            </td>
+                                            <td>2023-03-14</td>
+                                            <td>
+                                                <span class="order-status order-shipped">
+                                                    Shipped
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="payment-status payment-paid">
+                                                    <div class="dot"></div>
+                                                    <span>Paid</span>
+                                                </div>
+                                            </td>
+                                            <td>RM 43.25</td>
+                                        </tr>
+                                        <tr>
+                                            <td>#2347</td>
+                                            <td>
+                                                <div class="order-owner">
+                                                    <img src="image/payment_3.jpg" alt="user image">
+                                                    <span>evelyn</span>
+                                                </div>
+                                            </td>
+                                            <td>2023-03-25</td>
+                                            <td>
+                                                <span class="order-status order-shipped">
+                                                    Shipped
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="payment-status payment-paid">
+                                                    <div class="dot"></div>
+                                                    <span>Paid</span>
+                                                </div>
+                                            </td>
+                                            <td>RM 172.62</td>
+                                        </tr>
+                                        <tr>
+                                            <td>#2348</td>
+                                            <td>
+                                                <div class="order-owner">
+                                                    <img src="image/payment_4.jpg" alt="user image">
+                                                    <span>John doe</span>
+                                                </div>
+                                            </td>
+                                            <td>2023-04-22</td>
+                                            <td>
+                                                <span class="order-status order-shipped">
+                                                    Shipped
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="payment-status payment-paid">
+                                                    <div class="dot"></div>
+                                                    <span>Paid</span>
+                                                </div>
+                                            </td>
+                                            <td>RM 73.45</td>
+                                        </tr>
+                                        <tr>
+                                            <td>#2349</td>
+                                            <td>
+                                                <div class="order-owner">
+                                                    <img src="image/payment_5.jpg" alt="user image">
+                                                    <span>evelyn</span>
+                                                </div>
+                                            </td>
+                                            <td>2023-05-20</td>
+                                            <td>
+                                                <span class="order-status order-ready">
+                                                    Ready
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="payment-status payment-pending">
+                                                    <div class="dot"></div>
+                                                    <span>Pending</span>
+                                                </div>
+                                            </td>
+                                            <td>RM 60.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>#2350</td>
+                                            <td>
+                                                <div class="order-owner">
+                                                    <img src="image/payment_1.jpg" alt="user image">
+                                                    <span>Sophia</span>
+                                                </div>
+                                            </td>
+                                            <td>2023-05-20</td>
+                                            <td>
+                                                <span class="order-status order-return">
+                                                    Cancel
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="payment-status payment-refund">
+                                                    <div class="dot"></div>
+                                                    <span>Refund</span>
+                                                </div>
+                                            </td>
+                                            <td>RM 120.30</td>
+                                        </tr>
+                                        <tr>
+                                            <td>#2351</td>
+                                            <td>
+                                                <div class="order-owner">
+                                                    <img src="image/payment_3.jpg" alt="user image">
+                                                    <span>Joshua</span>
+                                                </div>
+                                            </td>
+                                            <td>2023-05-20</td>
+                                            <td>
+                                                <span class="order-status order-shipped">
+                                                    Shipped
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="payment-status payment-paid">
+                                                    <div class="dot"></div>
+                                                    <span>Paid</span>
+                                                </div>
+                                            </td>
+                                            <td>RM 70.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>#2352</td>
+                                            <td>
+                                                <div class="order-owner">
+                                                    <img src="image/payment_2.jpg" alt="user image">
+                                                    <span>Andy</span>
+                                                </div>
+                                            </td>
+                                            <td>2023-05-20</td>
+                                            <td>
+                                                <span class="order-status order-shipped">
+                                                    Shipped
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="payment-status payment-paid">
+                                                    <div class="dot"></div>
+                                                    <span>Paid</span>
+                                                </div>
+                                            </td>
+                                            <td>RM 160.45</td>
+                                        </tr>
+                                        <tr>
+                                            <td>#2353</td>
+                                            <td>
+                                                <div class="order-owner">
+                                                    <img src="image/payment_4.jpg" alt="user image">
+                                                    <span>Melody</span>
+                                                </div>
+                                            </td>
+                                            <td>2023-05-20</td>
+                                            <td>
+                                                <span class="order-status order-shipped">
+                                                    Shipped
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="payment-status payment-paid">
+                                                    <div class="dot"></div>
+                                                    <span>Paid</span>
+                                                </div>
+                                            </td>
+                                            <td>RM 231.24</td>
+                                        </tr>
+                                        <tr>
+                                            <td>#2354</td>
+                                            <td>
+                                                <div class="order-owner">
+                                                    <img src="image/payment_5.jpg" alt="user image">
+                                                    <span>Nicole</span>
+                                                </div>
+                                            </td>
+                                            <td>2023-05-20</td>
+                                            <td>
+                                                <span class="order-status order-shipped">
+                                                    Shipped
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="payment-status payment-paid">
+                                                    <div class="dot"></div>
+                                                    <span>Paid</span>
+                                                </div>
+                                            </td>
+                                            <td>RM 137.14</td>
+                                        </tr>
+                                        <tr>
+                                            <td>#2355</td>
+                                            <td>
+                                                <div class="order-owner">
+                                                    <img src="image/payment_1.jpg" alt="user image">
+                                                    <span>Eva</span>
+                                                </div>
+                                            </td>
+                                            <td>2023-05-20</td>
+                                            <td>
+                                                <span class="order-status order-ready">
+                                                    Ready
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="payment-status payment-pending">
+                                                    <div class="dot"></div>
+                                                    <span>Pending</span>
+                                                </div>
+                                            </td>
+                                            <td>RM 345.65</td>
+                                        </tr>
+                                        <tr>
+                                            <td>#2355</td>
+                                            <td>
+                                                <div class="order-owner">
+                                                    <img src="image/payment_4.jpg" alt="user image">
+                                                    <span>Evelyn</span>
+                                                </div>
+                                            </td>
+                                            <td>2023-05-20</td>
+                                            <td>
+                                                <span class="order-status order-ready">
+                                                    Ready
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="payment-status payment-pending">
+                                                    <div class="dot"></div>
+                                                    <span>Pending</span>
+                                                </div>
+                                            </td>
+                                            <td>RM 96.75</td>
+                                        </tr>
+                                        <tr>
+                                            <td>#2356</td>
+                                            <td>
+                                                <div class="order-owner">
+                                                    <img src="image/payment_2.jpg" alt="user image">
+                                                    <span>Amy</span>
+                                                </div>
+                                            </td>
+                                            <td>2023-05-20</td>
+                                            <td>
+                                                <span class="order-status order-ready">
+                                                    Ready
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="payment-status payment-pending">
+                                                    <div class="dot"></div>
+                                                    <span>Pending</span>
+                                                </div>
+                                            </td>
+                                            <td>RM 43.89</td>
+                                        </tr>
+                                        <tr>
+                                            <td>#2356</td>
+                                            <td>
+                                                <div class="order-owner">
+                                                    <img src="image/payment_3.jpg" alt="user image">
+                                                    <span>Jane</span>
+                                                </div>
+                                            </td>
+                                            <td>2023-05-20</td>
+                                            <td>
+                                                <span class="order-status order-return">
+                                                    Cancel
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="payment-status payment-refund">
+                                                    <div class="dot"></div>
+                                                    <span>Refund</span>
+                                                </div>
+                                            </td>
+                                            <td>RM 43.89</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Order List -->
+
+
+        <!-- Start Member -->
+		<div id="member" class="contain">
+            <div class="main-content">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="box">
+                            <div class="box-header">Member List</div>
+                            <div class="box-body overflow-scroll">
+                                <table>
+                                    <tr> 
+                                        <th></th>
+                                        <th>User Name</th>
+                                        <th>User ID</th>
+                                        <th>Phone Number</th>
+                                        <th>Postcode</th>
+                                        <th>Address</th>
+                                    </tr>
+
+                                    <tr> 
+                                        <td><span class="material-icons-sharp">face</span></td>
+                                        <td>Mike Tyson</td>
+                                        <td>1201208596</td>
+                                        <td>013-9677551</td>
+                                        <td>53000</td>
+                                        <td>70A,288 Residensi,53000,Kuala Lumpur,Wilayah Persekutuan</td>
+                                    </tr>   
+
+                                    <tr> 
+                                        <td><span class="material-icons-sharp">face</span></td>
+                                        <td>Chin Sam Ye</td>
+                                        <td>1201201935</td>
+                                        <td>013-9677551</td>
+                                        <td>28700</td>
+                                        <td>78A,288 Residensi,28700,Bentong,Wilayah Persekutuan</td>
+                                    </tr>
+
+                                    <tr> 
+                                        <td><span class="material-icons-sharp">face</span></td>
+                                        <td>Sim Boon Xun</td>
+                                        <td>1211206861</td>
+                                        <td>018-33672910</td>
+                                        <td>53200</td>
+                                        <td>8B,The Arc,53000,Cyberjaya,Selangor</td>
+                                    </tr>
+
+                                    <tr> 
+                                        <td><span class="material-icons-sharp">face</span></td>
+                                        <td>Lew Kien Yew</td>
+                                        <td>1211206094</td>
+                                        <td>012-23511341</td>
+                                        <td>53000</td>
+                                        <td>No.88,Taman MMU Height,53200,Cyberjaya, Selangor</td>
+                                    </tr>
+
+                                    <tr> 
+                                        <td><span class="material-icons-sharp">face</span></td>
+                                        <td>Siti Zulaikha</td>
+                                        <td>1201209083</td>
+                                        <td>012-63829011</td>
+                                        <td>53000</td>
+                                        <td>No.99,Taman Klang Height,53000,Klang,Wilayah Persekutuan</td>
+                                    </tr>
+
+                                    <tr> 
+                                        <td><span class="material-icons-sharp">face</span></td>
+                                        <td>Christina Chin</td>
+                                        <td>1201208835</td>
+                                        <td>017-022628291</td>
+                                        <td>53081</td>
+                                        <td>PL2-0211,Taman Gemilang,53081,Kuala Lumpur,Wilayah Persekutuan</td>
+                                    </tr>
+
+                                    <tr> 
+                                        <td><span class="material-icons-sharp">face</span></td>
+                                        <td>Koko Milo</td>
+                                        <td>12112089225</td>
+                                        <td>017-927261231</td>
+                                        <td>52081</td>
+                                        <td>Mo.133,Taman Taktau,52081,Kuala Lumpur,Wilayah Persekutuan</td>
+                                    </tr>
+                                       
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>	
+        </div>
+        <!-- End Member List -->
+
+
+        <!-- Order Details -->
+		<div id="OrderHistory" class="contain">
+		    <div class="main-content">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="box">
+                            <div class="box-header">Order History</div>
+							<div class="box-body overflow-scroll">
+								<div id="customer-list"></div>
+								<div id="order-list"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Order Details-->
 
     </div>
 
