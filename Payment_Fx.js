@@ -60,10 +60,12 @@ var imgSource = [
 		'src': "#"
 	},
 	{'alt': "E-Wallet Image Error",
-		'src': "image/E-Wallet-QR.jpg"
+		// 'src': "image/E-Wallet-QR.jpg"
+		'src': "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FQR_code&psig=AOvVaw2LalS8jVqqBw5fjA1GEH34&ust=1728828292647000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNigt7WBiYkDFQAAAAAdAAAAABAE"
 	},
 	{'alt': "Duit-Now Image Error",
-		'src': "image/Bigpay-QR.jpg"
+		// 'src': "image/Bigpay-QR.jpg"
+		'src': "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FQR_code&psig=AOvVaw2LalS8jVqqBw5fjA1GEH34&ust=1728828292647000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNigt7WBiYkDFQAAAAAdAAAAABAE"
 	}
 ];
 
